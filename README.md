@@ -1,5 +1,7 @@
 # DEVZONE 
 Project Cycle 1 Submission
+This repository contains some exciting frontend projects like games, clone and landing pages. So, let's contribute more projects to this repository. 
+Happy learning!!
 
 <!-- <p align="center">
     <img src="https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg" />
