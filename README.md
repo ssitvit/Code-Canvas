@@ -25,8 +25,7 @@ Happy learning!!
 
 - [ Shreya Rajpal ](https://github.com/Shreyaar12)
 - [Anukanksha Priya](https://github.com/cleveranu)
-
-
+- [Raj Kumar](https://github.com/raj03kumar)
 
 
 ---
@@ -41,7 +40,7 @@ if (youLiked) {
 
 # Read for successful merge
 
-[![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg)] <br/>
+![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
 # Hello People!!  <br/>
 #### Contribute and grow this repository with us, make sure to check out Contributing.md for contribution guidelines and add your name in the Contributors.md.  <br/>
 # To make a pull request follow these steps: <br/>
