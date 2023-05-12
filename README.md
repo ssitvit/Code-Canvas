@@ -1,6 +1,6 @@
 # Code Canvas 
       <b> Bootstrap your Code Fantasies into Reality</b>
-      <br>
+      
 CodeCanvas is an innovative platform where developers can collaborate and contribute their frontend expertise. From booking systems to games, landing pages to clones, this community-driven repository welcomes diverse frontend projects. Unleash your creativity, share your code, and inspire others to build captivating web experiences together on CodeCanvas.
 <br>
 
