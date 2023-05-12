@@ -1,5 +1,9 @@
-# DEVZONE 
-Project Cycle 1 Submission
+# Code Canvas 
+      <b> Bootstrap your Code Fantasies into Reality</b>
+      <br>
+CodeCanvas is an innovative platform where developers can collaborate and contribute their frontend expertise. From booking systems to games, landing pages to clones, this community-driven repository welcomes diverse frontend projects. Unleash your creativity, share your code, and inspire others to build captivating web experiences together on CodeCanvas.
+<br>
+
 This repository contains some exciting frontend projects like games, clone and landing pages. So, let's contribute more projects to this repository. 
 Happy learning!!
 
@@ -54,16 +58,16 @@ ___
 # ⚡⚡ Steps for Creating First Pull request ⚡⚡ <br/>
 ---
 
-0. Star <a href="https://github.com/IEEE-SSIT-VIT/DEVZONE" title="this">this</a> repository.
-1. Fork <a href="https://github.com/IEEE-SSIT-VIT/DEVZONE" title="this">this</a> repository.
+0. Star <a href="https://github.com/IEEE-SSIT-VIT/Code-Canvas" title="this">this</a> repository.
+1. Fork <a href="https://github.com/IEEE-SSIT-VIT/Code-Canvas" title="this">this</a> repository.
 2. Clone the forked repository.
 ```css
-git clone https://github.com/<your-github-username>/DEVZONE
+git clone https://github.com/<your-github-username>/Code-Canvas
 ```
   
 3. Navigate to the project directory.
 ```py
-cd DEVZONE
+cd Code Canvas
 ```
 4. Create a new branch.
 ```css
@@ -82,5 +86,5 @@ git push -u origin <your_branch_name>
 8. Create a Pull Request.
 9. Congratulations! 🎉 you've made your contribution.
 
-At last after successfully submitting a pull request you can view your work live at <a href="">SSIT LIVE </a>
+At last after successfully submitting a pull request you can view your work live at <a href="https://codecanvas.ieeessitvit.tech/">SSIT LIVE </a>
 
