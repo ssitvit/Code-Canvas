@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0px;
+  background-color: rgb(14, 8, 18);
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'The Drum Kit';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+.class {
+  /* text-align: center; */
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-size: large;
+  font-weight: bold;
+  font-family: sans-serif ;
+}
+.pressed{
+  box-shadow: 0 3px 4px 0 #4D163D;
+  opacity: 0.5;
+}
+/* .main{
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image:  -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image:-ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+  background-image:-ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+  background-image:-o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+  background-image:linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+background-color: black;
+background-size: 50px 50px;
+}; */
+.set {
+  padding-top: 8rem;
+  padding-left: 2rem;
+  align-items: center;
+  display: flex; 
+  /* flex: 100%; */
+  flex-direction: row;
+   /* justify-content: space-around;  */
+  /* display: inline-grid;
+  grid-row: 1/3; */
+  /* row-gap: 10px; */
+}
+.sh {
+  text-align: center;
+  color: white;
+  padding-top: 10rem;
+}
+.w {
+  margin-left: 12px;
+   text-align: center;
+   font-size: 65px;
+   font-weight: bold;
+   color:red;
+    height: 155px;
+    width: 165px;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+  background-image: url("Images/p1.png");
+  background-color: whitesmoke;
+  background-size: 100% 100%;
+  -webkit-text-stroke: 4px #030321;
+}
+.a {
+    height: 155px;
+    width: 165px;
+    text-align: center;
+   font-size: 65px;
+   font-weight: bold;
+   color: red;
+  background-image: url("Images/p2.jpg");
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 2rem;
+  border-width: thick;
+  margin-left: 12px;
+background-size: 100% 100%;
+-webkit-text-stroke: 4px #030321;
+}
+.s{
+  margin-left: 12px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: red;
+    height: 155px;
+    width: 165px;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+    background-color: whitesmoke;
+  background-size: 100% 100%;
+    background-image: url("Images/p3.jpg");
+    -webkit-text-stroke: 4px #030321;
+}
+.d{
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: red;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+    margin-left: 12px;
+  background-size: 100% 100%;
+    height: 155px;
+    width: 165px;
+    object-fit: fill;
+    background-image: url("Images/p4.jpg");
+    -webkit-text-stroke: 4px #030321;
+}
+.j{
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: red;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+    margin-left: 12px;
+  background-size: 100% 100%;
+    height: 155px;
+    width: 165px;
+    object-fit: fill;
+    object-position: 80% 100%;
+    background-image: url("Images/p5.jpg");
+    -webkit-text-stroke: 4px #030321;
+}
+.k{
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: red;
+  -webkit-text-stroke: 4px #030321;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+    margin-left: 12px;
+  background-size: 100% 100%;
+    height: 155px;
+    width: 165px;
+    object-fit: fill;
+    background-image: url("Images/p6.jpg");
+}
+.l{
+  margin-left: 12px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: red;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 2rem;
+    border-width: thick;
+    -webkit-text-stroke: 4px #030321;
+  background-size: 100% 100%;
+    height: 155px;
+    width: 165px;
+    object-fit: fill;
+    background-image: url("Images/p7.jpg");
+}
+
+@media screen and (max-width:600px){ 
+  * {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(14, 8, 18);
+  }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+  
+  html, body{
+    height: 100%;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background: #030321;
+    font-family: Arial;
+  }
+  
+  .container {
+    display: flex;
+  /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+  }
+  
+  svg {
+      display: block;
+      font: 8.5em 'The Drum Kit';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+    stroke: #4D163D;
+    animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+    stroke: #840037;
+    animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+    stroke: #BD0034;
+    animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+    stroke: #BD0034;
+    animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+    stroke: #FDB731;
+    animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+  .class {
+    /* text-align: center; */
+    padding-top: 2rem;
+    padding-left: 3rem;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif ;
+  }
+  .pressed{
+    box-shadow: 0 1px 2px 0 #4D163D;
+    opacity: 0.5;
+  }
+  /* .main{
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image:  -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image:-ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+    background-image:-ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+    background-image:-o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+    background-image:linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) ;
+  background-color: black;
+  background-size: 50px 50px;
+  }; */
+  .set {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    align-items: center;
+    display: flex;
+    /* flex:100%; */
+    flex-direction: row;
+    /* justify-content: space-around; */
+    /* display: inline grid;
+    grid-row: 1/3; */
+  }
+  .sh {
+    text-align: center;
+    color: white;
+    padding-top: 10rem;
+  }
+  .w {
+     text-align: center;
+     font-size: 45px;
+     font-weight: bold;
+     color:red;
+      height: 85px;
+      width: 95px;
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 1rem;
+      border-width: thick;
+    background-image: url("Images/p1.png");
+    background-color: whitesmoke;
+    background-size: 100% 100%;
+    -webkit-text-stroke: 2px #030321;
+    padding-left: 20px;
+  }
+  .a {
+      height: 85px;
+      width: 95px;
+      text-align: center;
+     font-size: 45px;
+     font-weight: bold;
+     color: red;
+    background-image: url("Images/p2.jpg");
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 1rem;
+    border-width: thick;
+    margin-left: 12px;
+    padding-left: 20px;
+  
+  background-size: 100% 100%;
+  -webkit-text-stroke: 2px #030321;
+  }
+  .s{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+      height: 85px;
+      width: 95px;
+      border-style: solid;
+      border-color: yellow;
+      border-radius:1rem;
+      border-width: thick;
+      background-color: whitesmoke;
+    background-size: 100% 100%;
+      background-image: url("Images/p3.jpg");
+      -webkit-text-stroke: 2px #030321;
+      padding-left: 20px;
+      margin-left: 12px;
+  }
+  .d{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 1rem;
+      border-width: thick;
+    
+    background-size: 100% 100%;
+      height: 85px;
+      width: 95px;
+      object-fit: fill;
+      background-image: url("Images/p4.jpg");
+      -webkit-text-stroke: 2px #030321;
+      margin-left: 12px;
+      padding-left: 20px;
+  }
+  .j{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 1rem;
+      border-width: thick;
+    
+    background-size: 100% 100%;
+      height: 85px;
+      width: 95px;
+      object-fit: fill;
+      object-position: 80% 100%;
+      background-image: url("Images/p5.jpg");
+      -webkit-text-stroke: 2px #030321;
+      margin-left: 12px;
+      padding-left: 20px;
+  }
+  .k{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+    -webkit-text-stroke: 2px #030321;
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 1rem;
+      border-width: thick;
+    
+    background-size: 100% 100%;
+      height: 85px;
+      width: 95px;
+      object-fit: fill;
+      background-image: url("Images/p6.jpg");
+      margin-left: 12px;
+      padding-left: 20px;
+  }
+  .l{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 1rem;
+      border-width: thick;
+      -webkit-text-stroke: 2px #030321;
+    background-size: 100% 100%;
+      height: 85px;
+      width: 95px;
+      object-fit: fill;
+      background-image: url("Images/p7.jpg");
+      margin-left: 12px;
+      padding-left: 20px;
+  }
+}
