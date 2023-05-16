@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment</title>
+</head>
+<style>
+    
+.pay-footer{
+    height: 400px;
+    background-color: rgb(218, 213, 213);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.footer-items{
+    color: rgb(41, 39, 39);
+    padding-left: 17%;
+    padding-top: 12px;
+    justify-content: center;
+}
+
+#pay-container{
+    font-size: 25px;
+    padding-right: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.pay-box{
+    background-color: white;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 100px auto;
+    width: 700px;
+    height:750px;
+    justify-content: center;
+    padding-left: 90px;
+    text-align: center;
+}
+.logo{
+ padding-left: 20px;
+    padding-top: 20px;
+}
+
+a:link, a:visited {
+
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#button{
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 70px;
+    font-size: large;
+    text-align: left;  
+    display:inline;
+}
+.selection{
+    height: 40px;
+    width: 170px;
+    float:left;
+    text-align: center;
+    
+  margin: auto;
+  padding: 20px;
+}    
+.logo-contianer{
+    float: right;
+    height: 30px;
+    width: 200px;
+}
+
+#form{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#data-box{
+    text-align: left;
+    width: 360px;
+    height: 100px;
+    font-size: 20px;
+} 
+</style>
+ 
+<body>
+    <div class="logo">
+    <img src="LOGO.svg" width="190" height="60">
+    </div>
+    <div class="pay-box">
+        <div id="pay-container">
+            <h6>STEP 3 OF 3</h6>
+            <h1>Select Payment method</h1>
+            Your payment is encrypted and you can change the payment method at any time.
+            <br><br><b>Security for peace of mind.<br>Cancel easily online.</b><br><br>
+            <button id="button"><div class="selection"><a href="practice2.html">Credit or Debit Card</a></div>
+            <div class="logo-container"><img src="cards.JPG" width="220px" height="60px"></div>
+            </button><br><br>
+            <button id="button"><div class="selection"><a href="upi_form.html">UPI Auto-Pay</a></div>
+            <div class="logo-container"><img src="upi.JPG"></div>    </button>
+       </div>
+    </div>
+    <div class="pay-footer">
+        <div class="footer-items">
+            <h2>Questions? Call 0120-996-012</h2><br>
+            <table>
+                <tr>
+                <th id="data-box"><a href="">FAQ</a></th>
+                <th id="data-box"><a href="">Help Center</a></th>
+                <th id="data-box"><a href="">Netflix Shop</a></th>
+                <th id="data-box"><a href="">Terms of Use</a></th>
+                </tr>
+                <tr>
+                    <th id="data-box"><a href="">Privacy</a></th>
+                    <th id="data-box"><a href="">Cookie Preferences</a></th>
+                    <th id="data-box"><a href="">Corporate Information</a></th>
+                    <th id="data-box"><a href="">Act on Commercial Transactions</a></th>
+                    </tr>
+            </table>
+            <form>
+                <select name="dropdown" id="form">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="Telegu">తెలుగు</option>
+            </form>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<script src="C:\VIT\Winter Sem. 2022-2023\Web Technologies\angular.min.js"></script>
+
+<script>
+ function display(){
+    var x=document.getElementById("mail").value;
+    document.getElementById("display1").innerHTML="Email ID : <u> "+x+"</u><br>";
+    var y=document.getElementById("pass").value;
+    document.getElementById("display2").innerHTML="Password :  <u> "+y+"</u><br>";
+}
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+</script>
+<style>
+.login-box{
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 100px auto;
+    width: 25%;
+    height: 40%;
+    border-radius: 12px;
+    padding-left: 90px;
+}
+.login-footer{
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.input{
+    height: 50px;
+    width: 350px;
+  background-color:rgb(58, 56, 56);
+  border-radius: 5px;
+  font-size: 25px;
+  color:white;
+  text-align: center;
+}
+::placeholder { 
+    padding: 24px;
+   font-size: 25px;
+}
+#button{
+    height: 50px;
+    width: 350px;
+  background-color:rgb(255, 0, 0);
+  border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#login-container{
+    font-size: 25px;
+    padding-right: 15%;
+}
+#rem_me{
+    color: white;
+}
+#remember{
+    font-size: 18px;
+}
+.footer-items{
+    color: grey;
+    padding-left: 17%;
+    padding-top: 12px;
+}
+#help{
+    font-size: 18px;
+}
+a:link,a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+#form{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#data-box{
+    text-align: left;
+    width: 360px;
+    height: 100px;
+    font-size: 20px;
+} 
+#signup{
+    color: blue;
+}
+#signin{
+    color: white;
+}
+#req{
+    height: 50px;
+    width: 50px;
+    color:red;
+    font-size: 12px;
+}
+#display-result{
+    padding-left: 10%;
+    height: 200px;
+    width: 500px;
+    background-color: black;
+    color:white;
+    margin: 100px auto;
+
+}
+</style>
+<body ng-app="" background="bg.jpg" width="300" height="500" onload='document.myForm.mail.focus()'>
+<img src="LOGO.svg" width="190" height="60" style="padding:20px">
+<div class="login-box">
+    <div id="login-container">
+        <h1>Sign In</h1><br>
+        <form name="myForm">
+        <input class="input" id="mail" type="text" name="Email" ng-model="Email" placeholder="Email" required><br>
+        <span id="req" ng-show="myForm.Email.$touched && myForm.Email.$invalid">*Email is required</span><br><br>
+        <input  class="input" id="pass" type="password" name="Pass" ng-model="Pass" placeholder="Password" required><br>
+        <span id="req" ng-show="myForm.Pass.$touched && myForm.Pass.$invalid">*Password is required</span><br><br>
+        <button id="button" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.myForm.mail)"/>Sign In</button><br><br>
+        <button id="button" onclick="display()">Display</button><br>
+        <input type="checkbox" id="rem_me" name="rem" value="Remember Me">
+        <label for="vehicle1" id="remember"> Remember Me</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="" id="help">Need Help?</a>
+        <h6>New to Netflix? <a id="signup"href="signup.html">Sign up now.</a></h6>       
+        <h6>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</h6>
+        </form>    
+    </div>
+</div>
+<div id="display-result">
+    <h4>Inputed Output will pe displayed in this DIV: </h4><br><br>
+        <span id="display1"></span><br>
+        <spna id="display2"></span>
+</div>
+<div class="login-footer">
+<div class="footer-items">
+    <h2>Questions? Call 0120-996-012</h2><br>
+    <table >
+        <tr>
+        <th id="data-box"><a href="">FAQ</a></th>
+        <th id="data-box"><a href="">Help Center</a></th>
+        <th id="data-box"><a href="">Netflix Shop</a></th>
+        <th id="data-box"><a href="">Terms of Use</a></th>
+        </tr>
+        <tr>
+            <th id="data-box"><a href="">Privacy</a></th>
+            <th id="data-box"><a href="">Cookie Preferences</a></th>
+            <th id="data-box"><a href="">Corporate Information</a></th>
+            <th id="data-box"><a href="">Act on Commercial Transactions</a></th>
+            </tr>
+    </table>
+    <form>
+        <select name="dropdown" id="form">
+            <option value="English">English</option>
+            <option value="Hindi">हिंदी</option>
+            <option value="Tamil">தமிழ்</option>
+            <option value="Telegu">తెలుగు</option>
+    </form>
+</div>
+</div>
+</body>
+</html>
