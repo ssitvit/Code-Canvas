@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Card</title>
+</head>
+<script src="C:\VIT\Winter Sem. 2022-2023\Web Technologies\angular.min.js"></script>
+<style>
+.card-footer{
+    height: 400px;
+    background-color: rgb(218, 213, 213);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.footer-items{
+    color: rgb(41, 39, 39);
+    padding-left: 17%;
+    padding-top: 12px;
+    justify-content: center;
+}
+
+#card-container{
+    font-size: 25px;
+    padding-right: 15%;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 20%;
+}
+.card-box{
+    background-color: white;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 100px auto;
+    width: 40%;
+    height: 50%;
+    border-radius: 12px;
+    justify-content: center;
+    padding-left: 90px;
+}
+#button{
+    background-color: rgb(226, 43, 43);
+    color:white;
+    font-size: larger;
+    height: 80px;
+    width: 100%;
+    border: 0px;
+}
+.logo{
+ padding-left: 20px;
+    padding-top: 20px;
+}
+#des1{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+#input{
+    height: 75px;
+    width: 98%;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+::placeholder { 
+    padding: 24px;
+   font-size: 25px;
+}
+a:link , a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.price{
+    width: 720px;
+    height: 100px;
+    background-color: rgb(168, 167, 167);
+    text-align: center;
+    padding-top: 20px;
+}
+#form{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#data-box{
+    text-align: left;
+    width: 360px;
+    height: 100px;
+    font-size: 20px;
+}
+#membership{
+    color: white;
+}
+#req{
+    height: 20px;
+    width: 50px;
+    color:red;
+    font-size: 15px;
+}
+</style>
+ 
+<body ng-app="">
+    <div class="logo">
+    <img src="LOGO.svg" width="190" height="60">
+    </div>
+    <div class="card-box">
+        <div id="card-container">
+            <h6>STEP 3/3</h6>
+        <div id="des1"><h1>Setup your credit or debit card</h1></div>
+        <img src="cards.JPG" width="220" height="60">
+        <form name="myForm">
+            <input id="input" type="text" name="Name" ng-model="Name" placeholder="Name" required><br>
+            <span id="req" ng-show="myForm.Name.$touched && myForm.Name.$invalid">*Name is required</span><br>
+            <input id="input" type="text" name="Surname" ng-model="Surname" placeholder="Surname"required><br>
+            <span id="req" ng-show="myForm.Surname.$touched && myForm.Surname.$invalid">*Surname is required</span><br>
+            <input id="input" type="number" name="CardNumber" ng-model="CardNumber" placeholder="Card Number" min=16 required><br>
+            <span id="req" ng-show="myForm.CardNumber.$touched && myForm.CardNumber.$invalid">*Card Number is required</span><br>
+            <input id="input" input type="text" onfocus="(this.type='month')" name="ExpiryDate" ng-modeel="ExpiryDate" placeholder="Expiry Date (MM/YY)"required><br>
+            <span id="req" ng-show="myForm.ExpiryDate.$touched && myForm.ExpiryDate.$invalid">*Expiry Date is required</span><br>
+            <input id="input" type="number" name="CVV" ng-model="CVV" placeholder="Security Code (CVV)" ng-maxlength="3" required ><br>
+            <span id="req" ng-show="myForm.CVV.$touched && myForm.CVV.$invalid">*CVV is required</span><br><br>
+            <br>
+            <div class="price">
+                ₹649/month<br>
+                premium plan 
+            </div>
+        </form> 
+        <h5> All payments above ₹ 2000 will require an additional authentication.
+        <br><br>By clicking the checkbox below, you agree to our Terms of Use , Privacy Statement and that you are over 18. Netflix will automatically continue your membership and charge your membership fee (currently ₹649/month) to your payment method until you cancel it. You can cancel your membership at any time to avoid future charges.</h5>
+        <button id="button"><a id="membership" href=" ">Start Membership</a></button><br>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="footer-items">
+            <h2>Questions? Call 0120-996-012</h2><br>
+            <table>
+                <tr>
+                <th id="data-box"><a href="">FAQ</a></th>
+                <th id="data-box"><a href="">Help Center</a></th>
+                <th id="data-box"><a href="">Netflix Shop</a></th>
+                <th id="data-box"><a href="">Terms of Use</a></th>
+                </tr>
+                <tr>
+                    <th id="data-box"><a href="">Privacy</a></th>
+                    <th id="data-box"><a href="">Cookie Preferences</a></th>
+                    <th id="data-box"><a href="">Corporate Information</a></th>
+                    <th id="data-box"><a href="">Act on Commercial Transactions</a></th>
+                    </tr>
+            </table>
+            <form>
+                <select name="dropdown" id="form">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="Telegu">తెలుగు</option>
+            </form>
+        </div>
+        </div>
+</body>
+</html>

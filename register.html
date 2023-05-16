@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<script src="C:\VIT\Winter Sem. 2022-2023\Web Technologies\angular.min.js"></script>
+<script>
+    
+ function display(){
+    var x=document.getElementById("mail").value;
+    document.getElementById("display1").innerHTML="Email ID : <u> "+x+"</u><br>";
+    var y=document.getElementById("pass").value;
+    document.getElementById("display2").innerHTML="Password :  <u> "+y+"</u><br>";
+}
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
+</script>
+<style>
+    
+.register-footer{
+    height: 400px;
+    background-color: rgb(218, 213, 213);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.footer-items{
+    color: rgb(41, 39, 39);
+    padding-left: 17%;
+    padding-top: 12px;
+    justify-content: center;
+}
+
+#register-container{
+    font-size: 25px;
+    padding-right: 15%;
+    padding-bottom: 20%;
+}
+.register-box{
+    background-color: white;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 100px auto;
+    width: 35%;
+    height: 50%;
+    border-radius: 12px;
+    padding-left: 90px;
+}
+#button{
+    background-color: rgb(226, 43, 43);
+    color:white;
+    font-size: larger;
+    height: 80px;
+    width: 100%;
+    border: 0px;
+}
+.logo{
+ padding-left: 20px;
+    padding-top: 20px;
+}
+#des1{
+    font-size: 20px;
+    text-align: left;
+}
+
+#des2{
+    width: 90%;
+    height: 17%;
+    font-size: 25px;
+    text-align: left;
+}
+
+.input{
+    height: 75px;
+    width: 98%;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+::placeholder { 
+    padding: 24px;
+   font-size: 25px;
+}
+a:link , a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#form{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#data-box{
+    text-align: left;
+    width: 360px;
+    height: 100px;
+    font-size: 20px;
+} 
+#next{
+    color: white;
+}
+#req{
+    height: 20px;
+    width: 50px;
+    color:red;
+    font-size: 15px;
+}
+
+#display-result{
+    padding-left: 10%;
+    height: 200px;
+    width: 550px;
+    background-color: wheat;
+    color:black;
+    margin: 100px auto;
+
+}
+    </style>
+ 
+<body ng-app="">
+    <div class="logo">
+    <img src="LOGO.svg" width="190" height="60">
+    </div>
+    <div class="register-box">
+        <div id="register-container">
+            <h6>STEP 1 OF 3</h6>
+        <div id="des1"><h1>Create a password to start your membership</h1></div>
+        <div id="des2">Just a few more steps and you're done!<br>We hate paperwork, too.</div>
+        <form name="myForm">
+            <input class="input" id="mail" type="text" name="Email" ng-model="email" placeholder="Email" required><br>
+            <span id="req" ng-show="myForm.Email.$touched && myForm.Email.$invalid">*Email is required</span><br><br>
+            <input class="input" id="pass" type="password" name="Pass" ng-model="pass" placeholder="Add a Password" required><br>    
+            <span id="req" ng-show="myForm.Pass.$touched && myForm.Pass.$invalid">*Password is required</span><br><br>
+        
+        <button id="button"><a id="next"href="subscription.html">Next</a></button><br><br>
+        <button id="button" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.myForm.Email)">Validate</button><br><br>
+        <button id="button" onclick="display()">Display</button><br>
+    </form>  
+    
+<div id="display-result">
+    <h4>Inputed Output will pe displayed in this DIV: </h4><br>
+        <span id="display1"></span><br>
+        <spna id="display2"></span>
+</div>
+</div>
+    </div>
+    <div class="register-footer">
+        <div class="footer-items">
+            <h2>Questions? Call 0120-996-012</h2><br>
+            <table >
+                <tr>
+                <th id="data-box"><a href="">FAQ</a></th>
+                <th id="data-box"><a href="">Help Center</a></th>
+                <th id="data-box"><a href="">Netflix Shop</a></th>
+                <th id="data-box"><a href="">Terms of Use</a></th>
+                </tr>
+                <tr>
+                    <th id="data-box"><a href="">Privacy</a></th>
+                    <th id="data-box"><a href="">Cookie Preferences</a></th>
+                    <th id="data-box"><a href="">Corporate Information</a></th>
+                    <th id="data-box"><a href="">Act on Commercial Transactions</a></th>
+                    </tr>
+            </table>
+            <form>
+                <select name="dropdown" id="form">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="Telegu">తెలుగు</option>
+            </form>
+        </div>
+        </div>
+</body>
+</html>
