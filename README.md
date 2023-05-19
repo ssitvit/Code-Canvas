@@ -48,7 +48,7 @@ Happy learning!!
 
 ## Project Maintainers 😃
 
-  
+  <p align="center">
   <a href="https://github.com/Shreyaar12"><img src="https://avatars.githubusercontent.com/u/102377700?v=4" width="8%" /></a>
 
 - [Anukanksha Priya](https://github.com/cleveranu)
