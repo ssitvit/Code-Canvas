@@ -25,12 +25,36 @@ Happy learning!!
 </li>
 	<li>Donate directly to open source projects</li> -->
 
-### Contributors
 
-- [ Shreya Rajpal ](https://github.com/Shreyaar12)
+---
+### Our Team
+
+
+
+
+---
+
+<h2 align=center> Project Admin ❤️ </h1>
+
+  <p align="center">
+  <a href="https://github.com/Shreyaar12"><img src="https://avatars.githubusercontent.com/u/91542376?v=4" width="10%" /></a> 
+	<br>
+	<a href="https://github.com/Shreyaar12"> Shreya Rajpal</a>
+
+  <p align="center">
+  <a target="_blank"href="https://www.linkedin.com/in/shreya-rajpal-817066221/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</p>
+
+## Project Maintainers 😃
+
+  
+  <a href="https://github.com/Shreyaar12"><img src="https://avatars.githubusercontent.com/u/102377700?v=4" width="8%" /></a>
+
 - [Anukanksha Priya](https://github.com/cleveranu)
-- [Raj Kumar](https://github.com/raj03kumar)
 
+## Contributors ✨
+- [Raj Kumar](https://github.com/raj03kumar)
 
 ---
 
