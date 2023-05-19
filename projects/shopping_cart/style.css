@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Pacifico',Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body{
-  background-color:navy;
+  background-color:#FCEDDA;
 }
 
 header{
@@ -17,7 +17,7 @@ header{
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color:#ff6348;
+  background-color:#EE4E34;
 }
 
 .nav{
@@ -42,8 +42,8 @@ header{
   color:white;
   width: 30px;
   height: 30px;
-  text-align: center;
-  position: relative;
+  text-align:center;
+  position:relative;
 }
 
 .cart-count{
