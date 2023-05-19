@@ -49,9 +49,11 @@ Happy learning!!
 ## Project Maintainers 😃
 
   <p align="center">
-  <a href="https://github.com/Shreyaar12"><img src="https://avatars.githubusercontent.com/u/102377700?v=4" width="8%" /></a>
-
+  <a href="https://github.com/cleveranu"><img src="https://avatars.githubusercontent.com/u/102377700?v=4" width="10%" /></a>
 - [Anukanksha Priya](https://github.com/cleveranu)
+<a target="_blank"href="https://www.linkedin.com/in/anukanksha-priya-664730220/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
 
 ## Contributors ✨
 - [Raj Kumar](https://github.com/raj03kumar)
