@@ -2,11 +2,11 @@ body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
   color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .showcase::after {
-  content: '';
+  content: "";
   height: 100vh;
   width: 100%;
   background-image: url(https://i.postimg.cc/hjkL7MBg/programming-background-with-person-working-with-codes-computer.jpg);
@@ -50,19 +50,21 @@ body {
 .content .title {
   font-size: 3.2rem;
   margin-top: 1rem;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
 }
-.title1{
+.title1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3.2rem;
   margin-top: 1rem;
-  font-family: 'Abril Fatface', cursive;
-  margin-left: 40%;
-
+  font-family: "Abril Fatface", cursive;
+  /* margin-left: 40%; */
 }
 .content .text {
   line-height: 1.7;
   margin-top: 1rem;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
 }
 
 .container {
@@ -150,7 +152,6 @@ footer p {
   }
 }
 
-
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -215,6 +216,7 @@ body {
 
 .card {
   list-style: none;
+  border-radius: var(--spacing-l);
   position: relative;
 }
 
