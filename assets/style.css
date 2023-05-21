@@ -188,9 +188,66 @@ body {
   align-items: flex-start;
   background-image: linear-gradient(15deg, #0f4667 0%, 150%);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px;
+
   min-height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.input-container {
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  gap: 5px;
+}
+
+.input-container input {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+
+  border: 1px solid white;
+
+  flex: 1;
+
+  font-size: 0.8em;
+
+  padding: 0.2em 0.2em;
+
+  border-radius: 4px;
+}
+
+.input-container input:focus-within {
+  border: 1px solid rgb(140, 255, 0);
+}
+.input-container input::placeholder {
+  color: rgb(183, 182, 182);
+}
+
+.input-container select {
+  font-size: 0.8em;
+
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+
+  border-radius: 4px;
+
+  padding: 0.2em 0;
+
+  /* align-self: stretch; */
+}
+
+.input-container select option {
+  background-color: black;
 }
 
 .card-grid {
@@ -198,6 +255,9 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
+
+  justify-content: center;
+
   max-width: var(--width-container);
   width: 100%;
 }
