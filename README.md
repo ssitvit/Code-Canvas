@@ -15,7 +15,10 @@
       <img src="https://img.shields.io/github/issues-pr-closed/DevFeed404/DevFeed-1.0?style=for-the-badge" />
       <img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge" />
  </div>
-# Code Canvas 
+
+
+#Code Canvas 
+
       <b> Bootstrap your Code Fantasies into Reality</b>
       
 CodeCanvas is an innovative platform where developers can collaborate and contribute their frontend expertise. From booking systems to games, landing pages to clones, this community-driven repository welcomes diverse frontend projects. Unleash your creativity, share your code, and inspire others to build captivating web experiences together on CodeCanvas.
