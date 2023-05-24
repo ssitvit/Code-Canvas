@@ -32,19 +32,20 @@ body {
 .content {
   position: absolute;
   z-index: 1;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  margin-top: 105px;
+  transform: translate(-50%,-50%);
+  /* margin-top: 105px;
   margin-left: -145px;
   width: 300px;
-  height: 350px;
+  height: 350px; */
   text-align: center;
-  transition: all 1000ms;
+  transition: all 10ms;
 }
 
 .content .logo {
   height: 200px;
-  width: 300px;
+  text-align: center;
 }
 
 .content .title {
@@ -56,15 +57,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   margin-top: 1rem;
-  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
   /* margin-left: 40%; */
 }
 .content .text {
   line-height: 1.7;
   margin-top: 1rem;
-  font-family: "Abril Fatface", cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* font-family: "Abril Fatface", cursive; */
 }
 
 .container {
@@ -76,7 +79,7 @@ body {
 
 .grid-3 {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 35px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -91,6 +94,21 @@ body {
   margin: auto;
 }
 
+.services h3{
+  font-size: 2rem;
+}
+.services p{
+  font-size: 1.2rem;
+}
+.about h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+.about p{
+  font-size: 1.1rem;
+  color: black;
+}
 .bg-light {
   background: #f4f4f4;
   color: #333;
@@ -107,6 +125,9 @@ footer {
 
 footer p {
   margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Small Screens */
@@ -321,6 +342,8 @@ body {
   padding: var(--spacing-l);
   position: absolute;
   top: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .card__category {
@@ -331,9 +354,11 @@ body {
 }
 
 .card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 2.3rem;
+  text-shadow: 0 0 20px black;
   line-height: 1.4;
   word-spacing: 100vw;
+  text-align: center;
+  z-index: 1;
 }
