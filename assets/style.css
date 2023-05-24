@@ -304,9 +304,16 @@ body {
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  /* transform: scale(1) translateZ(0); */
   transition: filter 200ms linear, transform 200ms linear;
 }
+/* 
+.card__background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient( rgba(0, 40, 70, 0.16) 60.8%, rgb(10, 13, 15) 97.2%);
+} */
 
 .card:hover .card__background {
   transform: scale(1.05) translateZ(0);
@@ -318,9 +325,15 @@ body {
 
 .card__content {
   left: 0;
+  right: 0;
   padding: var(--spacing-l);
   position: absolute;
-  top: 0;
+  bottom: 0;
+  
+  background-color: rgba(12, 24, 28, 0.875);
+
+  border-radius: var(--spacing-l);
+  border-top-left-radius: 0;
 }
 
 .card__category {
