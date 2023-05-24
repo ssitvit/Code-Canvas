@@ -1,6 +1,7 @@
 
 
-# Code Canvas 
+# Code Canvas
+
 
       <b> Bootstrap your Code Fantasies into Reality</b>
       
@@ -45,6 +46,12 @@ Happy learning!!
       <img src="https://img.shields.io/github/issues-pr-closed/DevFeed404/DevFeed-1.0?style=for-the-badge" />
       <img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge" />
  </div>
+ 
+ 
+---
+## Our Mission
+
+Code-Canvas aims to create an environment where developers can come together, collaborate, and contribute their frontend expertise. By sharing projects and code, we hope to facilitate learning, inspire creativity, and foster innovation in web development. Our mission is to provide a platform that empowers developers to turn their code fantasies into reality and build captivating web experiences.
 
 ---
 ### Our Team
@@ -96,6 +103,11 @@ if (youLiked) {
 
 ![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
 # Hello People!!  <br/>
+
+## How to Contribute
+
+
+We encourage you to contribute to Code-Canvas and help us grow this repository. To get started, please check out the Contributing.md file for detailed contribution guidelines. Don't forget to add your name to the Contributors.md file to be recognized for your contributions.
 #### Contribute and grow this repository with us, make sure to check out Contributing.md for contribution guidelines and add your name in the Contributors.md.  <br/>
 # To make a pull request follow these steps: <br/>
 ## Step 1 Complete your project
@@ -137,4 +149,15 @@ git push -u origin <your_branch_name>
 9. Congratulations! 🎉 you've made your contribution.
 
 At last after successfully submitting a pull request you can view your work live at <a href="https://codecanvas.ieeessitvit.tech/">SSIT LIVE </a>
+	
+## Languages
 
+CSS: 41.4%
+
+HTML: 31.0%
+
+JavaScript: 27.6%
+
+## License
+
+This project is licensed under the MIT license.
