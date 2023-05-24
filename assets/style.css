@@ -282,6 +282,10 @@ body {
 
 .card {
   list-style: none;
+
+  border: none;
+  box-shadow: 0 0 6px 0 rgba(112, 112, 112, 0.703);
+
   border-radius: var(--spacing-l);
   position: relative;
 }
