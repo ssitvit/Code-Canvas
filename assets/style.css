@@ -319,13 +319,13 @@ body {
   background-position: center;
   border-radius: var(--spacing-l);
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  filter: blur(4px) brightness(0.75) saturate(1.2) contrast(0.85);
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
 }
 
@@ -356,7 +356,8 @@ body {
 .card__heading {
   color: white;
   font-size: 2.3rem;
-  text-shadow: 0 0 20px black;
+  font-weight: 800;
+  text-shadow: 0 0 5px black; 
   line-height: 1.4;
   word-spacing: 100vw;
   text-align: center;
