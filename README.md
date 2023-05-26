@@ -17,6 +17,7 @@ Happy learning!!
     <h4 align="center">INFO</h4>
 </p>
 
+
 <p align="center">
 	<h1 align="center"> WHAT IS HACKTOBERFEST 2022</h1>
 	<h2 align="center">Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways:</h2>
@@ -37,8 +38,8 @@ Happy learning!!
  </div>
 
 ---
-
-
+![Code-Canvas-2](https://github.com/Anikinee/Code-Canvas/assets/101719881/b4493bd3-f00f-4ae3-b5fa-43b59986f370)
+![Code-Canvas-1](https://github.com/Anikinee/Code-Canvas/assets/101719881/fe0ae38d-967a-4a98-bceb-f33c2e2c0c78)
 ---
 
 ```javascript
