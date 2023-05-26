@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong Score Keeper</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1 id="heading">Ping Pong Score Keeper</h1>
+      <img src="./images/table-tennis-kit-223522006.jpg" alt="">
+
+      <div class="score-keeper">
+        <span id="scoreSelect">
+          <label for="maxScore"> <h3>Playing To</h3> </label>
+          <select name="maxScore" id="maxScoreSelect">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </span>
+
+        <h2 id="scores"><span id="score1" class="score">0</span> - <span id="score2" class="score">0</span></h2>
+        <div id="buttons">
+          <button id="btn1" class="button">+1 Player 1</button>
+          <button id="btn2" class="button">+1 Player 2</button>
+          <button id="reset" class="button">Reset</button>
+        </div>
+
+        <button id="addNames" class="button">Add Custom Names!</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

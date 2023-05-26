@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #a2d2ff;
+}
+
+.container {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 600px;
+  height: 200px;
+  box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#scoreSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#scores {
+  font-size: 50px;
+}
+
+.score-keeper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#scores {
+  margin: 40px 0;
+}
+
+#maxScoreSelect {
+  width: 50px;
+  height: 30px;
+}
+
+label {
+  float: left;
+}
+
+.button {
+  margin-left: 10px;
+  margin-top: 2px;
+  padding: 7px;
+  font-size: 22px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+#reset {
+  background: red;
+  color: white;
+}
+
+#reset:hover {
+  cursor: pointer;
+  color: red;
+  background: white;
+}
+
+#btn1,
+#btn2 {
+  background: rgb(86, 189, 86);
+  color: white;
+}
+
+#btn1:hover,
+#btn2:hover {
+  cursor: pointer;
+  color: rgb(86, 189, 86);
+  background: white;
+}
+
+#addNames {
+  margin-top: 20px;
+  background: rgb(243, 21, 243);
+  color: white;
+}
+
+#addNames:hover {
+  cursor: pointer;
+  color: rgb(243, 21, 243);
+  background: white;
+}
+
+.score.winner {
+  color: rgb(0, 209, 0);
+}
+
+.score.loser {
+  color: red;
+}
+
+.button.disabled {
+  opacity: 0.5;
+}
+
+.button.disabled:hover {
+  cursor: not-allowed;
+}
