@@ -150,7 +150,7 @@ At last after successfully submitting a pull request you can view your work live
 <br>
 
 ## Our Contributors ✨
-<a href="https://github.com/amupedia2021/Project-Amupedia/graphs/contributors">
+<a href="https://github.com/ssitvit/Code-Canvas/graphs/contributors">
   <img align="center" src="https://contrib.rocks/image?max=100&repo=ssitvit/Code-Canvas" />
 </a> 
 <br><br>
