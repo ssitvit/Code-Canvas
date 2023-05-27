@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header-1{
+    
+    background-color: black;
+    color: white;
+}
+.banner{
+    height:100%;
+background-image:linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67),rgba(0,0,0,0.67)),url("../images/image-6.jpg");
+background-position:center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+footer{
+    background-color: black;
+    color: white;
+}

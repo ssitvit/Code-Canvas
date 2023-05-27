@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic Notes Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+ <h1 class="text-center header-1 m-0 p-4">MAGIC NOTES</h1>
+ <div class="container-fluid banner gx-0">
+    <div class="container py-3 text-white ">
+        <h1 class="my-5">Welcome to Magic Notes</h1>
+        <div class="card1">
+            <div class="card-body">
+                <form>
+                    <div class="mb-5">
+                        <h5 class="card-title my-2">Add title</h5>
+                      <input type="text" class="form-control" id="addTitle" aria-describedby="title" placeholder="Enter note title">
+                    </form>
+                 <h5 class="card-title mt-3">Add a Note</h5>
+                <div class="form-floating ">
+                    <textarea class="form-control my-3" placeholder="Leave a comment here" id="addText"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <hr class="mt-5">
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class=" row container-fluid py-1 m-auto"></div>
+              
+
+        </div>
+    </div>
+</div>
+<footer class="text-center py-3">Magic Notes @coyrights 2023-2024</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
