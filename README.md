@@ -46,21 +46,19 @@ Happy learning!!
       <img src="https://img.shields.io/github/issues-pr-closed/DevFeed404/DevFeed-1.0?style=for-the-badge" />
       <img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge" />
  </div>
-
-
+ 
+ ---
+ ### Organization 
 ---
-### Our Team
-
-
-
-
----
-
 <p align="center">
     <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
     <h2 align="center">GirlScript Summer Of Code 2023</h2>
-    <h4 align="center">Open Source Contribution</h4>
+    <h4 align="center">Girlscripts Foundation</h4>
 </p>
+
+---
+### Our Team
+---
 
 <h2 align=center> Project Admin ❤️ </h1>
 
