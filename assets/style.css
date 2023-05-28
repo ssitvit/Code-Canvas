@@ -188,9 +188,72 @@ body {
   align-items: flex-start;
   background-image: linear-gradient(15deg, #0f4667 0%, 150%);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px;
+
   min-height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.input-container {
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  gap: 18px;
+}
+
+.input-container input {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+
+  border: 1px solid rgb(160, 160, 160);
+
+  box-shadow: 0 0 2px 0 rgb(110, 109, 109);
+
+  flex: 1;
+
+  max-width: 380px;
+
+  font-size: 0.8em;
+
+  padding: 0.2em 0.4em;
+
+  border-radius: 9px;
+}
+
+.input-container input:focus-within {
+  border: 1px solid rgb(255, 255, 255);
+
+  box-shadow: 0 0 3px 0 rgb(224, 221, 221);
+}
+.input-container input::placeholder {
+  color: rgb(183, 182, 182);
+}
+
+.input-container select {
+  font-size: 0.8em;
+
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+
+  border-radius: 9px;
+
+  padding: 0.2em 0;
+
+  /* align-self: stretch; */
+}
+
+.input-container select option {
+  background-color: black;
 }
 
 .card-grid {
@@ -198,6 +261,9 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
+
+  justify-content: center;
+
   max-width: var(--width-container);
   width: 100%;
 }
