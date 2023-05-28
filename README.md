@@ -29,6 +29,7 @@ Happy learning!!
 	<li>Donate directly to open source projects</li> -->
 
 
+
 <div align="center">
       <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
       <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -46,6 +47,7 @@ Happy learning!!
       <img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge" />
  </div>
 
+
 ---
 ### Our Team
 
@@ -53,6 +55,12 @@ Happy learning!!
 
 
 ---
+
+<p align="center">
+    <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
+    <h2 align="center">GirlScript Summer Of Code 2023</h2>
+    <h4 align="center">Open Source Contribution</h4>
+</p>
 
 <h2 align=center> Project Admin ❤️ </h1>
 
