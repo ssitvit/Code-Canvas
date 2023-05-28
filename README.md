@@ -52,8 +52,6 @@ Happy learning!!
 ---
 <p align="center">
     <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
-    <h2 align="center">GirlScript Summer Of Code 2023</h2>
-    <h4 align="center">Girlscripts Foundation</h4>
 </p>
 
 ---
