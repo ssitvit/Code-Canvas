@@ -48,7 +48,7 @@ Happy learning!!
  </div>
  
  ---
- ### Organization 
+ ### OPEN SOURCE CONTRIBUTIONS!!  
 ---
 <p align="center">
     <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
