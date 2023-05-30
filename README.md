@@ -31,15 +31,25 @@ Happy learning!!
 	<li>Donate directly to open source projects</li> -->
 
 
+
 <div align="center">
       <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
       <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
       <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
  </div>
+ 
+ ---
+ ### OPEN SOURCE CONTRIBUTIONS!!  
+---
+<p align="center">
+    <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
+</p>
 
 ---
+
 ![Code-Canvas-2](https://github.com/Anikinee/Code-Canvas/assets/101719881/b4493bd3-f00f-4ae3-b5fa-43b59986f370)
 ![Code-Canvas-1](https://github.com/Anikinee/Code-Canvas/assets/101719881/fe0ae38d-967a-4a98-bceb-f33c2e2c0c78)
+
 ---
 
 ```javascript
