@@ -1,0 +1,74 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    color: #fff ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: goldenrod;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+button {
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    background-color: #ffcc00;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #016f32;
+}
+
+#dealerCards img {
+    height: 175px;
+    margin: 1px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#playerCards img {
+    height: 175px;
+    margin: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
