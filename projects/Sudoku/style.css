@@ -1,0 +1,81 @@
+#sudoku-grid {
+  border-collapse:separate; 
+  margin: 20px auto;
+  margin-top: 50px;
+}
+
+#sudoku-grid td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 18px;
+}
+
+#sudoku-grid input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+#sudoku-grid input:disabled {
+  background-color: #f2f2f2;
+  color: #3c3c3c;
+  cursor: not-allowed;
+}
+
+#sudoku-grid input::placeholder {
+  color: #999;
+}
+
+
+#sudoku-grid td:last-child {
+  border-right: 5px solid #000 ; 
+}
+
+/* Increase border width for 3x3 boxes */
+#sudoku-grid td:nth-child(3n+1) {
+  border-left: 2px solid #000;
+}
+
+#sudoku-grid tr:nth-child(3n+1) td {
+  border-top: 2px solid #000;
+}
+
+#sudoku-grid tr:last-child td {
+  border-bottom: 2px solid #000;
+}
+
+#reset-button{
+padding: 10px 35px;
+margin: 20px 0px 10px 42.5%;
+background-color: lightblue;
+border-radius: 8px;
+cursor: pointer;
+}
+
+#new-button {
+padding: 10px 40px;
+/* margin: 2px 46.5%; */
+background-color: lightblue;
+border-radius: 8px;
+cursor: pointer;
+}
+
+#done-button {
+padding: 10px 40px;
+margin: 10px 46%;
+background-color: aquamarine;
+border-radius: 8px;
+cursor: pointer;
+}
+
+h1{
+text-align: center;
+font-size: 50px;
+}
