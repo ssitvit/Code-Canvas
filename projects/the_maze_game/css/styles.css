@@ -1,0 +1,268 @@
+.table-row{
+    padding: 10px !important;
+}
+body{
+    margin-top: 0%;    
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.bkg{
+
+    background-size: 100%;
+    background-image: url("https://thumbs.dreamstime.com/b/troubled-businesswoman-finding-way-out-young-elegant-arrows-showing-directions-to-73023648.jpg");  
+    background-position: left top;
+    padding-bottom: 6%;
+    padding-top: 2%;
+    /* padding-bottom: 10% ; */
+
+}
+.marking{
+    background-image: linear-gradient(90deg, rgb(247, 69, 25),rgb(242, 245, 59));
+}
+
+
+#btn-ans:hover{
+    background-color: gray;
+}
+.animate{
+    animation: anime 41ms ;
+}
+
+
+.visited{
+    visibility: hidden  !important;
+ }
+ .back{
+     background-color: rgb(253, 250, 250);
+     padding: 1% 10px 10px 15px;
+ }
+
+ h1{
+     margin: 0%;
+
+ }
+ @keyframes ident {
+     50%{
+         background-color: white;
+
+     }
+     75%{
+        background-size: 50%;
+        transform: rotate(180deg);
+
+     }
+     100%{
+        transform: rotate(180deg);
+         background-image: linear-gradient(90deg, gray,white);
+
+     }
+ }
+.ky{
+    animation: ident 100ms;
+    background-color: gray;
+}
+.border-top{
+    border-top: 20px solid black !important;
+}
+.border-bottom{
+    border-bottom: 20px solid black !important;
+}
+.border-right{
+    border-right: 20px solid black !important;
+
+}
+.border-left{
+    border-left: 20px solid black !important;
+}
+.maze-img{
+    margin: 1% 0% 1% 1%;
+    height: 50%;
+}
+@keyframes anime {
+    0%{
+        /* background: rgb(250, 0, 0); */
+    }
+
+    100%{
+        border: 20px;
+    }
+}
+
+
+.heading-1{
+
+    font-family: 'Merriweather', serif;
+    font-size: 7em;
+    padding-top: 0%;
+    color: black;
+    font-weight: bold;
+    padding-left: -1%;
+    margin-left: 3%;
+}
+.add-color{
+    background-color: rgba(26, 42, 190, 0.979);
+}
+.add-c{
+    background-color: yellow;
+}
+
+
+table {
+    padding-top: 1% ;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg-model{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.model-content{
+    width: 450px;
+    height:380px;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    color: gray;
+    position:relative
+}
+.popup-image{
+    width: 200px;
+    height: 200px;
+
+}
+.cross{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    color: gray;
+    transform: rotate(45deg);
+}
+#popup-reload{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instruction{
+    width: 450px;
+    height:325px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.instruction p{
+    margin: 5%;
+}
+#solution-popup{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#sol-content{
+    width: 450px;
+    height:380px;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    color: gray;
+}
+.sol-image{
+    width: 200px;
+    height: 200px;
+}
+#btn-ans{
+    margin-top: 3%;
+}
+#btn-timer{
+    margin: 1%;
+}
+p{
+    margin: 5px;
+}
+
+#timer-bar{
+    height: 15px;
+    display: block;
+    width: 100%;
+    border-radius:10px;
+    background-color: rgb(69, 197, 69);
+}
+#outer-div{
+    height: 15px;
+    width: 100%;
+    border-radius:10px;
+    background-color: gray;
+    margin-bottom: 12px;
+
+}
+#timer-val{
+    margin: 1%;
+    text-align: center;
+}
+.seconds{
+    background-color: rgb(25, 28, 184);
+    border-radius: 45%;
+    font-size: 3rem;
+    color: white;
+    width: 60px;
+    display:inline-block;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+.dot{
+    width: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    /* border-radius: 12%; */
+}
+
+.icon-mail{
+    color: rgb(154, 230, 223);
+    padding: 1%;
+    right: 10px;
+    float: right;
+
+}
+.icon-li{
+    padding: 1%;
+    color: rgb(37, 37, 219);
+    float: right;
+
+}
+
+#try-again{
+    width: 100%;
+    margin-top: 3%;
+    justify-content: center;
+    display: none;
+    color: gray;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Maze Game</title>
+  <link rel="icon" type="image/x-icon" href="./images/Favicon.png">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/0257eae7c4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif&display=swap"
+  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="mypage">
+
+<!-- Title of page -->
+<div class="bkg">
+  <h1 class="heading-1">The Maze Game </h1>
+
+</div>
+
+<!-- Popup after successfull completion -->
+<div class=" bg-model">
+          <div class="model-content">
+              <p id="cross" class="cross">+</p>
+              <img class="popup-image"
+                  src="./images/Winner.png"
+                  alt="">
+              <p style="font-size: 1.6rem;">Congratulations !</p>
+              <p>You have successfully completed the challenge.</p>
+              <br>
+              <button type="button" id="restart" class="btn btn-primary btn-md">Play Again</button>
+          </div>
+  </div>
+
+  <!-- Popup on reloading (instructions) -->
+  <div id="popup-reload">
+      <div class="instruction">
+          <!-- For starting timer -->
+          <p><b>Try reaching Top left from Bottom right.</b></p>
+          <p><b>Use the 'arrow' keys for moving.</b></p>
+          <p><b>Select Difficulty Level-</b></p>
+          <button id="easy-btn" type="button" class="btn btn-outline-success">Easy</button>
+          <button id="medium-btn" type="button" class="btn btn-outline-primary">Medium</button>
+          <button id="hard-btn" type="button" class="btn btn-outline-danger">Hard</button>
+          <p><b>Reminder:- There is a Time limit of 120 seconds.</b></p>
+        </div>
+  </div>
+
+  <!--(unsuccessful attempt) Solution -->
+  <div id="solution-popup">
+      <div id="sol-content">
+          <img class="sol-image" src="./images/Tips.png" alt="">
+          <p><b>Didn't get the right path !!</b></p>
+          <p></b>No problem, We will help You.</b></p>
+          <p></b>Have a look at the solution by proceeding below</b></p>
+          <button type="button" class="btn btn-dark " id="btn-ans">Solution</button>
+      </div>
+  </div>
+  <!-- For Clock -->
+  <div id="timer-val">
+      <span id="min-tens" class="seconds">0</span>
+      <span id="min-ones" class="seconds">0</span>
+      <span class="seconds dot">:</span>
+      <span id="tens" class="seconds">0</span>
+      <span id="ones" class="seconds">0</span>
+  </div>
+
+  <!-- For progress bar -->
+  <div id="outer-div">
+      <div id="timer-bar"></div>
+  </div>
+
+  <div id="try-again">
+      <button id="tryagain-btn" type="button" class="btn btn-outline-primary">Want to Try Again</button>
+  </div>
+  <!-- Generating Table -->
+  <section class="back">
+      <table id="tableId"></table>
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
