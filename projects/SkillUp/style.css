@@ -1,0 +1,265 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header, footer{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, .card{
+    padding: 3em 2em 1em 2em;
+    height: 100vh;
+    background-color: rgba(34, 34, 34, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.card{
+    box-shadow: -1em 0 2em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* Add dark overlay */
+header::before, .card::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header img, .card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .text, .card .text{
+    max-width: 600px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+header h1, .card h1{
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+header p, .card p{
+    font-size: 1.1em;
+    line-height: 30px;
+    color: #dbdbdb;
+}
+
+.btn{
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    margin: 1em;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+.btn-secondary{
+    border: 3px #fff solid;
+    background: transparent;
+    color: #fff;
+}
+
+.btn-secondary:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+footer{
+    padding: 4em 2em;
+    color: #fff;
+}
+
+footer p{
+    margin-top: 1em;
+}
+
+/* Navbar styles */
+.navbar{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+/* Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+    background: #232323;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: #707070;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+}
+
+.navbar .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.menu-btn{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.navbar a, .menu-btn{
+    transition: 0.3s;
+}
+
+.navbar a:hover, .menu-btn:hover{
+    color: #ccc;
+}
+
+.brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.navbar .btn{
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 900px) {
+    .navbar .menu .brand{
+        margin: 0 1em;
+    }
+    .container > .brand{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header h1, .card h1{
+        font-size: 2.5em;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        background: rgba(24, 24, 24, 0.8);
+        position: absolute;
+        top: 3.7em;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding: 0 2.5em;
+        transition: 0.5s ease-in-out;
+        overflow-y: scroll;
+    }
+    .menu, .menu div{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .menu a{
+        padding: 0.7em 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu .brand{
+        display: none;
+    }
+    /* Toggle class for JavaScript */
+    .menu-open{
+        height: 14em;
+        padding: 2.5em 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 14px;
+    }
+}
