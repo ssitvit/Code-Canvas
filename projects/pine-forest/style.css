@@ -1,0 +1,177 @@
+/* We first doo simple mobile first design */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content a, .featured-icon a{
+    color: #fff;
+}
+
+.side-content a{
+    color: #000;
+}
+
+header > div{
+    padding: 1.5em;
+}
+
+.social-media li{
+    margin: 1em 0;
+}
+
+.content{
+    color: #fff;
+}
+
+.content, .featured-icon{
+    background: url(img/img-lg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.side-content{
+    background: #fff;
+}
+
+.side-img{
+    background: url(img/img-sm1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.featured-post{
+    background: #fff;
+}
+
+.featured-post img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.featured-post h4{
+    margin: 0.5em 0;
+}
+
+.featured-post a{
+    color: #37d337;
+}
+
+.featured-icon{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+}
+
+.arrows{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.arrows i{
+    cursor: pointer;
+}
+
+section {
+    padding: 2.5em;
+    color: #fff;
+    background: #111;
+}
+
+section p{
+    max-width: 600px;
+}
+
+@media screen and (max-width: 850px){
+    html{
+        font-size: 14px;
+    }
+}
+
+/* For responsivenesss */
+@media screen and (min-width: 800px){
+    header{
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr 2fr;
+        grid-template-rows: 4fr 1fr;
+        min-height: 100vh;
+    }
+
+    .content{
+        grid-column: 2/6;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .content > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .title{
+        font-size: 3.5em;
+    }
+
+    .content h4{
+        align-self: flex-start;
+    }
+
+    .brand{
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+
+    .side-content{
+        grid-row: 1/2;
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .side-img{
+        display: block;
+        grid-row: 2/3;
+    }
+
+    .featured-post{
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured-post img{
+        margin-top: 0;
+    }
+}
