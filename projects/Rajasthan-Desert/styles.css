@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #def0f2;
+}
+
+.parallax{
+    min-height: 40em;
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.images{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.images img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+}
+
+.img1{
+    z-index: 4;
+    filter: drop-shadow(0 0 4em #ea8827);
+}
+.img2{
+    z-index: 3;
+}
+.img3{
+    z-index: 2;
+}
+.img4{
+    z-index: 1;
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.about{
+    background: #000;
+    color: #fff;
+    padding: 1.5em;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    margin-top: 10em;
+    text-align: center;
+}
+
+.about h1{
+    font-size: 3em;
+}
+
+.about p{
+    max-width: 35em;
+    font-size: 1.2em;
+    line-height: 34px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 3em;
+    }
+}
+
+/* Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+    background: #ebd4b9;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: #e76e05;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+    background: #d6431a;
+}
