@@ -1,0 +1,28 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(KaushanScript-Regular.ttf);
+}
+
+.font1 {
+    font-family: myFirstFont;
+    color: #eaebed;
+}
+
+div{
+    text-align: center;
+    color: #eaebed;
+    font-size: medium;
+}
+
+body {
+    text-align: center;
+    font-size: xx-large;
+}
+
+h1 {
+    text-align: center;
+}
+
+html {
+    background-color: #1f2937;
+}
