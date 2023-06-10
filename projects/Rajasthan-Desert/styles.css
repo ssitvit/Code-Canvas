@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #def0f2;
 }
 
-.parallax{
+.parallax {
     min-height: 40em;
     height: 100vh;
     overflow: hidden;
@@ -12,12 +12,12 @@ body{
     top: 0;
 }
 
-.images{
+.images {
     height: 100vh;
     overflow: hidden;
 }
 
-.images img{
+.images img {
     position: absolute;
     left: 0;
     width: 100%;
@@ -25,23 +25,27 @@ body{
     object-fit: cover;
 }
 
-.img1{
+.img1 {
     z-index: 4;
     filter: drop-shadow(0 0 4em #ea8827);
 }
-.img2{
+
+.img2 {
     z-index: 3;
 }
-.img3{
+
+.img3 {
     z-index: 2;
 }
-.img4{
+
+.img4 {
     z-index: 1;
 }
 
-.title{
+/* Font size changed to 5rem */
+.title {
     font-family: 'Kanit', sans-serif;
-    font-size: 6em;
+    font-size: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,9 +59,10 @@ body{
     text-align: center;
 }
 
-.about{
-    background: #000;
-    color: #fff;
+/*Altered*/
+.about {
+    background: linear-gradient(to left, #000000, #434343);
+    color: #ffffffc9;
     padding: 1.5em;
     z-index: 2;
     position: sticky;
@@ -66,41 +71,85 @@ body{
     text-align: center;
 }
 
-.about h1{
+/* h1 given a background color to enhanace the sub-titles */
+.about h1 {
     font-size: 3em;
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+
 }
 
-.about p{
+/* Font color added to give the text a more dynamic effect on hovering */
+.about p {
     max-width: 35em;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 34px;
     margin: 1em auto;
+    color: #d3cce382;
+    justify-content: space-between;
 }
 
+/* Hover effect added */
+.about p:hover {
+    font-size: 1.2em;
+    color: #fff;
+
+}
+
+.recent {
+    color: #c0b1e5e1;
+    text-shadow: 0 0 3px rgba(82, 69, 69, 0.742);
+}
+
+footer {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.foot {
+    color: #c0b1e5e1;
+    text-shadow: 0 0 3px rgba(82, 69, 69, 0.742);
+}
+
+
+
 @media screen and (max-width: 600px) {
-    .title{
-        font-size: 3em;
+    .title {
+        font-size: 3rem;
+        justify-content: space-around;
     }
 }
 
 /* Custom Scrollbar*/
 
 /* width */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track{
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #ebd4b9;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb{
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #e76e05;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover{
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #d6431a;
+}
+
+.thar :hover {
+    top: 2px;
+
 }
