@@ -35,7 +35,7 @@ const displayRequiredProjects = (category, search_value) => {
     })
 
     // if no such cards are found then display the following message
-    if(!found_card.length) found_card='<h2 style="color: red";>Cannot find the project</h1>'
+    if(!found_card.length) found_card='<h2 style="color: white;font: italic 1.2em "Fira Sans", serif;";>Cannot find the project</h1>'
 
     card_grid.innerHTML = found_card;
 };
