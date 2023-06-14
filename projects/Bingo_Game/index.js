@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
         mainPage.style.display = 'block';
     }, 2200);
 
-    startButton.addEventListener('click', function () {
+    function handleStartGame() {
         let playersInput = document.getElementById('players');
 
         let numPlayers = parseInt(playersInput.value);
@@ -47,9 +47,18 @@ window.addEventListener('load', function () {
                 startGame(numPlayers);
             }, 1900);
         }
-    });
+    }
+
+    startButton.addEventListener('click', handleStartGame);
+
     players.addEventListener('input', function () {
         messageElement.textContent = '';
+    });
+
+    players.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            handleStartGame();
+        }
     });
 });
 
@@ -247,6 +256,7 @@ function startGame(numPlayers) {
 
     function checkWinningConditions() {
         const cards = document.querySelectorAll('.card');
+        let total = 0, id = 0;
         for (let k = 0; k < numPlayers; k++) {
             const cell = cards[k].querySelectorAll('.main-table-cell');
             const letter = cards[k].querySelectorAll('.letters-bingo');
@@ -273,44 +283,40 @@ function startGame(numPlayers) {
             }
 
             while (j < cnt) {
-                letter[j].classList.add('show-bingo');
+                if (!letter[j].classList.contains('show-bingo'))
+                    letter[j].classList.add('show-bingo');
                 j++;
-                if (j === 5) {
-                    pauseBackgroundMusic();
-                    if (checkDrawCondition()) {
-                        winSound.play();
-                        giveCongratulations(k);
-                        setTimeout(function () {
-                            location.reload();
-                        }, 5500);
-                    } else {
-                        drawSound.play();
-                        alert("Game Draw !!");
-                        setTimeout(function () {
-                            location.reload();
-                        }, 2000);
+                if (j === 5) pauseBackgroundMusic();
+            }
+            total = 0;
+            let lettersBingo = document.querySelectorAll('.letters-bingo');
+            let count = 0;
+            for (let i = 0; i < 5 * numPlayers; i++) {
+                if (lettersBingo[i].classList.contains('show-bingo')) count++;
+                if ((i + 1) % 5 === 0) {
+                    if (count === 5) {
+                        ++total;
+                        id = (i + 1) / 5;
                     }
+                    count = 0;
                 }
             }
         }
-    }
-
-    function checkDrawCondition() {
-        let a = [];
-        for (let i = 0; i < numPlayers; i++) {
-            let cnt = 0;
-            for (let j = 0; j < 12; j++) {
-                if (data[i][j]) cnt++;
-            }
-            if (a.includes(cnt)) return false;
-            else if (cnt >= 5) {
-                for (let x = 0; x < a.length; x++) {
-                    if (a[x] >= cnt) return false;
-                }
-            }
-            a.push(cnt);
+        console.log(`Total -> ${total}`)
+        if (total === 1) {
+            winSound.play();
+            console.log(id);
+            giveCongratulations(id);
+            setTimeout(function () {
+                location.reload();
+            }, 5500);
+        } else if (total > 1) {
+            drawSound.play();
+            drawGreet();
+            setTimeout(function () {
+                location.reload();
+            }, 2000);
         }
-        return true;
     }
 
     function checkMatchWin(cell, k, winningPositions) {
@@ -330,17 +336,45 @@ function startGame(numPlayers) {
 
     function giveCongratulations(id) {
         let congratsPage = document.getElementById('congratsPage');
-        var winnerNumberElement = document.getElementById('winnerName');
+        let winnerNumberElement = document.getElementById('winnerName');
         winnerNumberElement.textContent = id + 1;
 
         let loadingPage = document.getElementById('loading-page');
         let mainPage = document.getElementById('main-page');
         let gamePage = document.getElementById('game-page');
+        let drawPage = document.getElementById('drawPage');
 
         loadingPage.style.display = 'none';
         mainPage.style.display = 'none';
         gamePage.style.display = 'none';
+        drawPage.style.display = 'none';
         congratsPage.style.display = 'flex';
     }
 
+    function drawGreet() {
+        let lettersBingo = document.querySelectorAll('.letters-bingo');
+        let n = 0, t = 0;
+        for (let i = 0; i < 5 * numPlayers; i++) {
+            if (lettersBingo[i].classList.contains('show-bingo')) n++;
+            if ((i + 1) % 5 === 0) {
+                if (n === 5)
+                    ++t;
+                n = 0;
+            }
+        }
+        let drawPage = document.getElementById('drawPage');
+        let totalPlayer = document.getElementById('totalPlayer');
+        totalPlayer.textContent = t;
+
+        let loadingPage = document.getElementById('loading-page');
+        let mainPage = document.getElementById('main-page');
+        let gamePage = document.getElementById('game-page');
+        let congratsPage = document.getElementById('congratsPage');
+
+        loadingPage.style.display = 'none';
+        mainPage.style.display = 'none';
+        gamePage.style.display = 'none';
+        congratsPage.style.display = 'none';
+        drawPage.style.display = '';
+    }
 }

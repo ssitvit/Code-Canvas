@@ -122,6 +122,7 @@ body {
 
 /* CSS end of Main Page */
 
+/* CSS of game page begins */
 h1 {
     display: grid;
     justify-content: center;
@@ -212,6 +213,8 @@ body:focus {
     margin-left: 42%;
     font-size: 1rem;
 }
+
+/* CSS of game page ends */
 
 /* Song Styling */
 #audioControls {
@@ -355,4 +358,25 @@ body:focus {
     #heading {
         font-size: 2rem;
     }
+}
+
+/* Styling of draw page */
+#drawPage {
+    background-color: #f7f7f7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drawPage h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#drawPage p {
+    font-size: 24px;
+    color: #555;
+    text-align: center;
 }

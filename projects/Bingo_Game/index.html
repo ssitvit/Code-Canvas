@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bingo Game</title>
+
+    <!-- Stylesheet and logo -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Loading Page of the game -->
     <div id="loading-page" style="display: none;">
         <div class="loader">
             <span class="animated-text">B</span>
@@ -21,6 +25,7 @@
         </div>
     </div>
 
+    <!-- Main page of the game -->
     <div id="main-page">
         <h1 id="heading" class="typing-effect">Welcome to the Bingo Game</h1>
         <label for="players" class="text">Number of players :</label>
@@ -30,6 +35,7 @@
         <h2>Made with ❤️ by <a href="https://github.com/Avdhesh-Varshney"> Avdhesh Varshney</a></h2>
     </div>
 
+    <!-- Game page of the game -->
     <div id="game-page" style="display: none;">
         <h1>Bingo Game</h1>
 
@@ -48,11 +54,18 @@
         <h2>Made with ❤️ by <a href="https://github.com/Avdhesh-Varshney"> Avdhesh Varshney</a></h2>
     </div>
 
+    <!-- Congratulation page of the game -->
     <div id="congratsPage" style="display: none;">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations !</h1>
         <p>Player <span id="winnerName"></span> is the winner!</p>
     </div>
 
+    <!-- Draw page of the game -->
+    <div id="drawPage" style="display: none;">
+        <h1>Game Draw !</h1>
+        <p><span id="totalPlayer"></span> players have same points.</p>
+    </div>
+    <!-- Adding JavaScript file -->
     <script src="index.js"></script>
 </body>
 
