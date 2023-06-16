@@ -192,7 +192,7 @@ select {
 @media (max-width: 768px) {
   .container {
     display: block;
-    /* min-width: 600px; */
+    
     margin: 30px auto;
     padding: 20px;
     min-width: 350px;
@@ -205,7 +205,7 @@ select {
   .bottom {
     /* display: flex; */
     flex-direction: column;
-    min-width: 350px;
+    min-width: 440px;
     
   }
 
