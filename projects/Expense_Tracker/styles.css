@@ -27,6 +27,9 @@ body {
   padding: 10px;
   margin-bottom: 10px;
 }
+.reminder-container {
+  flex: 1;
+}
 
 .container {
   margin: 30px auto;
@@ -180,8 +183,6 @@ select {
 }
 
 .bottom {
-  /* grid-column: 1 / span 2; */
-  /* display: flex; */
   flex-direction: column;
   min-width: 700px;
 }
