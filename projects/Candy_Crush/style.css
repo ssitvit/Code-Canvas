@@ -28,6 +28,51 @@ h1 {
  margin-top: -10px;
 }
 
+h1 {
+  text-align: center;
+  color: #FF4081;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+
+.navbar li a.active {
+  background-color: #FF4081;
+  color: white;
+}
+
 .invisible {
     background-color: white;
 }
