@@ -37,7 +37,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   column-gap: 50px;
-  max-width: 900px;
+  min-width: 900px;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -184,7 +184,7 @@ select {
 
 .bottom {
   flex-direction: column;
-  min-width: 700px;
+  min-width: 900px;
 }
 
 
