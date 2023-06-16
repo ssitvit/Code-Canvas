@@ -125,6 +125,9 @@ background-size: 50px 50px;
   background-size: 100% 100%;
   -webkit-text-stroke: 4px #030321;
 }
+.w:hover{
+  cursor: pointer;
+}
 .a {
     height: 155px;
     width: 165px;
@@ -141,6 +144,10 @@ background-size: 50px 50px;
 background-size: 100% 100%;
 -webkit-text-stroke: 4px #030321;
 }
+.a:hover{
+  cursor: pointer;
+}
+
 .s{
   margin-left: 12px;
   text-align: center;
@@ -158,6 +165,9 @@ background-size: 100% 100%;
     background-image: url("Images/p3.jpg");
     -webkit-text-stroke: 4px #030321;
 }
+.s:hover{
+  cursor: pointer;
+}
 .d{
   text-align: center;
   font-size: 65px;
@@ -174,6 +184,9 @@ background-size: 100% 100%;
     object-fit: fill;
     background-image: url("Images/p4.jpg");
     -webkit-text-stroke: 4px #030321;
+}
+.d:hover{
+  cursor: pointer;
 }
 .j{
   text-align: center;
@@ -193,6 +206,9 @@ background-size: 100% 100%;
     background-image: url("Images/p5.jpg");
     -webkit-text-stroke: 4px #030321;
 }
+.j:hover{
+  cursor: pointer;
+}
 .k{
   text-align: center;
   font-size: 65px;
@@ -210,6 +226,9 @@ background-size: 100% 100%;
     object-fit: fill;
     background-image: url("Images/p6.jpg");
 }
+.k:hover{
+  cursor: pointer;
+}
 .l{
   margin-left: 12px;
   text-align: center;
@@ -226,6 +245,9 @@ background-size: 100% 100%;
     width: 165px;
     object-fit: fill;
     background-image: url("Images/p7.jpg");
+}
+.l:hover{
+  cursor: pointer;
 }
 
 @media screen and (max-width:600px){ 
