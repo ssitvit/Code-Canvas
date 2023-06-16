@@ -104,6 +104,7 @@ h4 {
 
 .current {
   color: var(--color-primary);
+  padding-bottom: 10px;
 }
 
 .total {
@@ -191,9 +192,10 @@ select {
 @media (max-width: 768px) {
   .container {
     display: block;
-    max-width: 600px;
+    /* min-width: 600px; */
     margin: 30px auto;
     padding: 20px;
+    min-width: 350px;
   }
 
   .left-col,
@@ -210,12 +212,13 @@ select {
   .expense-summary {
   background-color: #fff;
   box-shadow: var(--box-shadow);
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px 0;
   border-radius: 10px;
+  max-width: 250px;
 }
 
 .expense-summary > div {
