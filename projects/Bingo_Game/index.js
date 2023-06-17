@@ -305,7 +305,6 @@ function startGame(numPlayers) {
         console.log(`Total -> ${total}`)
         if (total === 1) {
             winSound.play();
-            console.log(id);
             giveCongratulations(id);
             setTimeout(function () {
                 location.reload();
@@ -337,7 +336,7 @@ function startGame(numPlayers) {
     function giveCongratulations(id) {
         let congratsPage = document.getElementById('congratsPage');
         let winnerNumberElement = document.getElementById('winnerName');
-        winnerNumberElement.textContent = id + 1;
+        winnerNumberElement.textContent = id;
 
         let loadingPage = document.getElementById('loading-page');
         let mainPage = document.getElementById('main-page');
