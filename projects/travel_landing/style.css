@@ -56,12 +56,16 @@ header p{
     padding: 0.8em 1.8em;
     border-radius: 3em;
     background: #36e736;
-    border: 2px #36e736 solid;
-    color: #fff;
+    border: 2px #f5f8f5 solid;
+    color: #050000;
+}
+.btn:hover{
+    background-color: #dbdbdb;
+    color: #000;
 }
 
 .btn-secondary{
-    background: none;
+    background: #36e736;
     border: 2px #fff solid;
 }
 
