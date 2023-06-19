@@ -164,9 +164,25 @@ At last, after successfully submitting a pull request you can view your work liv
 <h3 align= "center">Let's Connect: <a href="https://www.linkedin.com/in/anukanksha-priya-664730220/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/cleveranu"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a>
 
 </h3>
-
-	
 <br>
+
+
+<h2 align= "center">Project Mentors 👩‍💻</h2>
+<p align="center">	
+<a href="https://github.com/Dharmesh177"><img src="https://github.com/iqrafirdose/Code-Canvas/assets/114678694/d61cc205-fddf-4389-a497-c9b15148b545" width="10%" />   </a>   <a href="https://github.com/artimanputra/"><img src="https://github.com/iqrafirdose/Code-Canvas/assets/114678694/1b128b14-ddfa-49d8-9be2-a166ddba6df6" width="10%" height="100" /></a>
+
+<br>
+<a href="https://github.com/Dharmesh177"><strong>Dharmesh Vala</strong></a> &ensp;                  
+<a href="https://github.com/artimanputra/"><strong> Arti Manputra</strong></a>
+<br>
+<p align="center">
+ <a href="https://www.linkedin.com/in/dharmesh-vala-252724204/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/Dharmesh177"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a> &ensp;    <a href="https://www.linkedin.com/in/arti-manputra/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/artimanputra/"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a>
+
+<br>
+
+
+
+
 
 # Our Contributors ✨
 <a href="https://github.com/ssitvit/Code-Canvas/graphs/contributors">
