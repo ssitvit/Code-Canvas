@@ -495,3 +495,22 @@ body {
 
 
 /* Footer Section Ends */
+#scrollUp {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Keep the button in place */
+  bottom: 20px; /* Position the button from the bottom */
+  right: 30px; /* Position the button from the right */
+  z-index: 99; /* Make sure it does not overlap other elements */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor on hover */
+  padding: 15px; /* Add padding */
+  border-radius: 10px; /* Add border-radius */
+  background-color: rgb(117, 116, 116); /* Add background-color */
+  color: white; /* Add text color */
+  font-size: 18px; /* Add font size */
+}
+
+#scrollUp:hover {
+  background-color: #666; /* Add background-color on hover */
+}
