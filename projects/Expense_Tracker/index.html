@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+  <!-- Expense Summary -->
+  <div class="expense-summary">
+    <div>
+      <h4>CURRENT MONTH</h4>
+      <p id="current" class="current money">$0.00</p>
+    </div>
+    <div>
+      <h4>TOTAL EXPENSES</h4>
+      <p id="total" class="total money">$0.00</p>
+    </div>
+    <div>
+      <h4>Budget</h4>
+      <p id="budget" class="budget money">$0.00</p>
+    </div>
+  </div>
+
+  <div id="alert-messages"></div>
+
+  <!-- Expense Form -->
+  <div class="container">
+    <div class="left-col">
+      <h3>Add Expense</h3>
+      <form id="expense-form">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input type="text" id="text" placeholder="Enter text" />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount" />
+        </div>
+        <div class="form-control">
+          <label for="expense-category">Category:</label>
+          <select id="expense-category">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="exp-date">Date:</label>
+          <input type="date" id="exp-date" required />
+        </div>
+        <button type="submit" class="btn">Add Expense</button>
+      </form>
+    </div>
+
+    <div class="right-col">
+      <h3>Expenses History</h3>
+      <table id="expense-list" class="list">
+        <thead>
+          <tr>
+            <th>Expense</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container bottom">
+    <div class="reminder-container">
+      <h3>Add Bill Reminder</h3>
+      <form id="reminder-form">
+        <div class="form-control">
+          <label for="reminder-name">Name:</label>
+          <input type="text" id="reminder-name" required />
+        </div>
+        <div class="form-control">
+          <label for="rem-amount">Amount</label>
+          <input type="number" id="rem-amount" placeholder="Enter amount" />
+        </div>
+        <div class="form-control">
+          <label for="reminder-due-date">Due Date:</label>
+          <input type="date" id="reminder-due-date" required />
+        </div>
+        <button type="submit" class="btn">Add Reminder</button>
+      </form>
+    </div>
+    <div>
+      <h3>Reminders</h3>
+      <table id="reminder-list" class="list">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Due Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
