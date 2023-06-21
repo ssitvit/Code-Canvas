@@ -1,6 +1,9 @@
 
 <div id="top"></div>
 
+
+![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
+
 # Code Canvas 
 **Bootstrap your Code Fantasies into Reality**    
 
@@ -61,7 +64,7 @@ if (youLiked) {
 
 # Read for a successful merge
 
-![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
+
 ## Contribute <br/>
 #### Contribute and grow this repository with us, make sure to check out <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributors.md">Contributors. md</a> for contribution guidelines and add your name in the Contributors.md.  <br/>
 ## Code Of Conduct
