@@ -1,6 +1,9 @@
 
 <div id="top"></div>
 
+
+![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
+
 # Code Canvas 
 **Bootstrap your Code Fantasies into Reality**    
 
