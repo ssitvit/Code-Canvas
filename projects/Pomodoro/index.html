@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div class="clock">
+      
+      <div class="progress-ring"></div>
+        <div id="timer">00:00</div>
+    </div>
+    <div class="controls">
+      <label for="work-time">Work Time (minutes):</label>
+      <input type="number" id="work-time" min="1" value="25">
+      <label for="short-break-time">Short Break Time (minutes):</label>
+      <input type="number" id="short-break-time" min="1" value="5">
+      <label for="long-break-time">Long Break Time (minutes):</label>
+      <input type="number" id="long-break-time" min="1" value="15">
+    </div>
+    <div class="buttons">
+      <button id="start-btn" onclick="startTimer()">Start</button>
+      <button id="stop-btn" onclick="stopTimer()" disabled>Stop</button>
+      <button id="reset-btn" onclick="resetTimer()" disabled>Reset</button>
+    </div>
+    <h2>To-Do List</h2>
+    <ul id="todo-list">
+      <li class="todo-item">
+        <div class="task-actions">
+          <input type="checkbox" id="task0">
+          <input type="text" class="task-input" value="Task 1">
+          <button onclick="updateTask(0)">Update</button>
+          <button onclick="removeTask(0)">Remove</button>
+        </div>
+      </li>
+    </ul>
+    <div class="add-task">
+      <input type="text" id="new-task-input" placeholder="Add a task">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
