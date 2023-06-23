@@ -1,6 +1,7 @@
 const btnCart=document.querySelector('#cart-icon');
 const cart=document.querySelector('.cart');
 const btnClose=document.querySelector('#cart-close');
+const buttons = document.querySelectorAll('.bonus');
 
 btnCart.addEventListener('click',()=>{
   cart.classList.add('cart-active');
@@ -137,6 +138,21 @@ function updateTotal()
   }else{
     cartCount.style.display='block';
   }
-
-
 }
+
+
+ //EXTRA items alert box. will display different messages in different alert box 👍
+
+// const buttons = document.querySelectorAll('.bonus');
+// Add click event listeners to each button
+   buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Find the parent card element of the clicked button
+    const card = button.closest('.food-box');
+    
+    // Add the "alert" class to the card element
+     const message = button.dataset.message;
+ // Display the alert message
+    alert(message);
+  });
+});
