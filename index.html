@@ -438,4 +438,23 @@
   <script src="filter_project.js"></script>
   <script src="script.js"></script>
 
+  <button id="scrollUp" onclick="scrollTopFunction()"><i class="fas fa-angle-up"></i></button>
+
+  <script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("scrollUp").style.display = "block";
+			} else {
+				document.getElementById("scrollUp").style.display = "none";
+			}
+		}
+
+		function scrollTopFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
 </body>
