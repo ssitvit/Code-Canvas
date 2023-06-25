@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.speech{
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color: rgb(47, 0, 255);
+    }
+}
+
+.titleSpeech{
+    h1{
+        color: rgb(0, 17, 173);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+}
+
+.talkBtn{
+    position: absolute;
+    bottom: 0;
+}

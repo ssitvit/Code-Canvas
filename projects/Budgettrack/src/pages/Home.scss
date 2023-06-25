@@ -1,0 +1,70 @@
+.ionic-page{
+    color: deeppink;
+
+    .ionic-head{
+        background-color: rgb(30, 23, 97);
+        color: rgb(250, 250, 250);
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    .ionic-bg{
+        .ionic-expense{
+            background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url("../assets/money2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            justify-items: center;
+            align-content: center;
+            padding: 10px 10px 150px 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    .ionic-page{
+        .ionic-bg{
+            .ionic-expense{
+                .expenseTrack{
+                    margin: 150px 0 0 0;
+                }
+                .expense{
+                    margin: -150px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .ionic-page{
+        .ionic-bg{
+            .ionic-expense{
+                height: 100%;
+                
+                .expenseTrack{
+                    order: 1;
+                    margin: 10px;
+                }
+                .income{
+                    order: 2;
+                    margin: 10px 0;
+                }
+                .expense{
+                    order: 3;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
