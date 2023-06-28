@@ -32,8 +32,8 @@ body > canvas {
 	text-color:white;
 	margin: 1rem 5rem;
 	font-family:cursive;
-	text-align:left;
-	align-item: center;
+	text-align: center;
+	margin: 0.5rem auto 0 auto;
 }
 
 #gamebar {
@@ -114,11 +114,6 @@ input, select {
 	border-bottom: 1px solid;
 	border-color: #eee;
 	padding-bottom: 1em;
-}
-
-.instruction {
-	text-align: center;
-	margin: 0.5rem auto 0 auto;
 }
 
 .instruction p {

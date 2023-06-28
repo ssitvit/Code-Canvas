@@ -41,6 +41,7 @@ function make_player_mortal() {
     player_is_immortal = false;
 }
 
+
 function getDistance(x1, y1, x2, y2) {
     var xDistance = x2 - x1;
     var yDistance = y2 - y1;
