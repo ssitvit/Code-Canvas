@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Surds Game Off</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="gamebar">
+
+        <span>Mission: </span>
+
+        <ul id="mission"></ul>
+
+        <span>Your Collection: </span>
+
+        <ul id="collection"></ul>
+
+    </div>
+
+    <canvas id="canvas" height="600" width="1200"></canvas>
+
+
+    <div id="gamebar"> Instructions:</div>
+    <div class="instruction">
+        <p><strong> Use Arrows Key or W/A/S/D to move. Dodge red balls to survive and collect letters to win. You are
+                immortal for 5 seconds when the game start and cannot collect letters or get killed.<br>
+            </strong>
+        </p>
+    </div>
+
+
+    <div class="game-settings">
+
+        <div class="game-settings-list">
+
+            <p>
+                <small>Leave (any or all) fields empty for default values.</small>
+            </p>
+
+            <form class="setting-form">
+
+                <div class="enemies-control">
+
+                    <label><strong>Number of Enemies: </strong></label>
+                    <br>
+                    <small>Min: 2, Max: 30 for better gameplay</small>
+                    <br>
+                    <input id="enemy_numbers" type="number" name="enemies_number">
+
+                </div>
+
+                <div class="points-control">
+
+                    <label><strong>Enter letters for your mission <small>(s)</small>: </strong></label>
+                    <br>
+                    <small>Use comma to seperate multiple words.</small>
+                    <br>
+                    <small>Each Single Word Length Limit (Max: 12)</small>
+                    <br>
+                    <input id="user_words" type="text" name="own_words">
+
+                </div>
+
+                <div class="order-control">
+
+                    <label><strong>How do you want to collect game points (letter): </strong></label>
+                    <br>
+                    <select id="points_order">
+
+                        <option value="select"> Select </option>
+
+                        <option value="particular"> In a particular order</option>
+
+                        <option value="random">In a random order</option>
+
+                    </select>
+
+                </div>
+
+            </form>
+
+            <div class="button">
+                <button class="start">Start Game</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="game-over">
+
+        <h1></h1>
+
+        <button onclick="window.location.reload();"> </button>
+
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
