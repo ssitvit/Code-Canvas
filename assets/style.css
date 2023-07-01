@@ -485,3 +485,11 @@ body {
   color: #1d0f44ad;
   transition: all 0.3s ease;
 }
+
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.loaded {
+  opacity: 1;
+}
