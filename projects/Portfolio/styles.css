@@ -1,5 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .top {
-    background-color: #D18CE0;
+    background-color:#344583;
+    width: 100vw;
+    height: 100vh;
+
+}
+.toptext{
+    color:hotpink;
+    font-size: 4rem;
 }
 
 body {
@@ -10,15 +22,15 @@ body {
 }
 
 h1 {
-    margin-top: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-    font-size: 5.625rem;
+    font-size: 5.62rem;
     color: #580a69;
 }
 
-h2 {
+.h2{
     font-size: 4rem;
     color: #580a69;
+    padding-top: 20px;
 }
 
 h3 {
@@ -28,6 +40,10 @@ h3 {
 p {
     font-size: 3em;
     line-height: 40px;
+    
+}
+.str{
+    color:red;
 }
 
 .bottom-cloud {
@@ -42,23 +58,57 @@ p {
 }
 
 .skillimg {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    
+}
+.skillimg:hover{
+    color:navy;
+    border-radius:80px;
+   
+    border: 10px solid ;
+   
+   
+}
+.skillpic{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 3px;
+    padding-right: 30px;
+    padding-left: 25px;
+    cursor:pointer;
+}
+.skillpic:hover{
+    color:#580a69;
+    border-radius:12px;
+   
+    border: 5px solid ;
+
 }
 
-
 .skills {
-    margin-bottom: 100px;
       word-wrap: break-word;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      /* justify-content: center;
       align-items: center;
-      text-align: center;
+      text-align: center; */
+     
 }
 
+.skill-row {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 10px;
+    margin:20px;
+}
+
+
 .profile {
-    margin-bottom: 100px;
     word-wrap: break-word;
     display: flex;
     flex-wrap: wrap;
@@ -74,27 +124,18 @@ p {
     height: 300px;
 }
 
-.skill-row ,.project-row{
-    width: 200px;
+
+
+.project-row{
+    width: 400px;
     height: 200px;
     border-radius: 5px;
     padding: 20px;
     font-size: 10px;
-    margin:20px;
+    margin-top:40px ;
+cursor: pointer;
 }
 
-.bottom {
-    font-size: 4em;
-    margin-top: 50px;
-}
-
-.btn {
-    font-size: 2em;
-}
-
-.mid {
-    margin-bottom: 50px;
-}
 .about{
     width: 64rem;
     border-width: 20000px;
@@ -144,8 +185,169 @@ div.experience .exp p {
 
 .innerexp {
     height: 8rem;
+    margin-top: 20px;
 }
 .sjit{
     position: relative;
     top: 100px;
 }
+
+#gh{
+    font-size: 4rem;
+    padding: 15px;
+    padding-bottom: 50px;
+    color:#580a69;
+}
+
+.box1{
+   background-color:rosybrown ;
+   width: 100vw;
+   height: 100vh;
+}
+
+.box2{
+    background-color:white;
+    width: 100vw;
+    height: 100vh;
+}
+
+#b2h{
+    margin-bottom: 130px;
+    font-size: 4rem;
+    padding: 15px;
+}
+.box3{
+    background-color:thistle;
+    width:100vw;
+    height: 100vh;
+}
+#b3h{
+  color:darkmagenta;
+  font-size: 4rem;
+  padding: 15px;
+}
+
+.box4{
+    background-color:lightsteelblue;
+    height: 100vh;
+}
+#b4h{
+    color:black;
+    font-size: 4rem;
+    padding: 15px;
+}
+
+.box5{
+    background-color:darkolivegreen;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.text{
+    background-color:antiquewhite;
+    height: 95vh;
+    word-wrap: break-word;
+    color:midnightblue;
+   
+    width:50vw;
+   
+}
+.link-contact{
+    background-color:midnightblue;
+    height: 95vh;
+    width: 48.5vw;
+    border: 1px solid black;
+    color:white;
+   
+   
+}
+.a-text{
+    background-color:antiquewhite;
+    padding: 30px 20px 30px 20px;
+    padding-bottom: 70px;
+    word-wrap: break-word;
+    /* width:200px; */
+    margin: 100px 30px 40px 30px;
+}
+
+.link-box{
+    
+    padding: 230px 20px 30px 20px;
+    margin:150px 40px 0px 240px;
+    padding-top: 50px;
+    height: 300px;
+    width: 240px;
+    align-items:center;
+ 
+   border-style: solid;
+   border-color:lightblue;
+   border-radius:90px 0px 90px 0px;
+   border-width: thick;
+
+}
+
+.a-link{
+   padding: 0px 40px 50px 10px;
+    font-size: 27px;
+   margin-bottom: 60px;
+   color:white;
+
+    
+}
+
+.b-link{
+    padding: 0px 40px 50px 10px;
+    font-size: 27px;
+   margin-bottom: 60px;
+   color:white;
+
+    
+}
+
+.c-link{
+    padding: 0px 40px 50px 10px;
+    font-size: 27px;
+    color:white;
+
+   margin-bottom: 60px;
+    
+    
+}
+.d-link{
+    padding: 0px 40px 50px 10px;
+    font-size: 27px;
+   margin-bottom: 60px;
+   color:white;
+
+    
+}
+.a-link:hover{
+color:lightblue;}
+.b-link:hover{
+color:lightblue;}
+.c-link:hover{
+color:lightblue;}
+.d-link:hover{
+color:lightblue;}
+
+
+.logo{
+    width: 35px;
+    height: 30px;
+}
+
+.sH{
+    padding-top: 50px;
+    font-size: 3rem;
+}
+
+.box6{
+    background-color:white;
+    width:100vw;
+    height: 4vh;
+    font-size: 20px;
+    padding-top: 3px;
+    color:black;
+}
+
