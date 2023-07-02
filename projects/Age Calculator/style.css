@@ -1,0 +1,62 @@
+*{
+    margin:30;
+    padding:30;
+    box-sizing: border-box;
+}
+body{
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    min-height: 300vh;
+}
+.container{
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    display:flexbox;
+    /* justify-content: center; */
+    align-items: center;  
+ 
+}
+.container p{
+    color: rgb(2, 15, 99);
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+}
+.date-container label{
+    font-size: larger;
+    margin: right 50px;    
+}
+#birthDate,#currentDate{
+    width: 200px;
+    height: 50px;
+    border: 10px;;
+    box-shadow: 0 0 2px 1px rgb(219, 63, 63);
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 6px;
+    font-family: serif;
+    color:rgb(174, 93, 93);
+    font-size:medium;
+}
+#calculateBtn{
+    width: 200px;
+    height: 60px;
+    margin-top: 60px;
+    font-size: larger;
+    font-family: 'Times New Roman';
+    background-color: rgb(250, 253, 250);
+    color:rgb(205, 117, 117); 
+    border:10px;
+    outline:auto;
+    border-radius: 40px;
+    
+    cursor:auto;
+    transition: 0.2s;
+}
+#calculateBtn:active{
+  box-shadow: 0 0 0 0;   
+}
