@@ -66,7 +66,7 @@ if (youLiked) {
 
 
 ## Contribute <br/>
-#### Contribute and grow this repository with us, make sure to check out <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributors.md">Contributors. md</a> for contribution guidelines and add your name in the Contributors.md.  <br/>
+#### Contribute and grow this repository with us, make sure to check out <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributing.md">Contributing.md</a> for contribution guidelines and add your name in the <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributors.md">Contributors.md</a>.  <br/>
 ## Code Of Conduct
 Check out <a href="https://github.com/ssitvit/Code-Canvas/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.</a><br>
 ## License
