@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #ffb6c1;
+}
+.quote {
+    background: #fff;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+    text-align: center;
+}
+.quote h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quote h1::after{
+    content: "";
+    height: 3px;
+    width: 75px;
+    border-radius: 3px;
+    background-color: #ADD8E6;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quote blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quote blockquote::before, .quote blockquote::after{
+    content: '"';
+}
+.quote span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote span::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #ADD8E6;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote button{
+    background: #0000FF;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #808080;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.quote button img{
+    width: 40px;
+    margin-right: 10px;
+}
+.quote button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
