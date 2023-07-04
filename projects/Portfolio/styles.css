@@ -1,32 +1,90 @@
-.top {
-    background-color: #D18CE0;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+a {
+    text-decoration: none;
+    /* color:aliceblue; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0px;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 10px; */
+    color:aliceblue;
+    background:linear-gradient(45deg,#170a69, #12075c, #0d092f);
+
 }
 
-h1 {
-    margin-top: 50px auto 0 auto;
+/* Navigation Bar */
+
+nav {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top:0;
+    left:0;
+    height:fit-content;
+    width:100vw;
+    /* padding: 1rem; */
+    color: #0d092f;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.796), rgba(145, 142, 243, 0.637)
+    );
+}
+
+header > nav > ul > li > a {
+    color:#0d092f;
+}
+
+header > nav > h2 > a {
+    color:#0d092f;
+}
+header > nav > ul > li > a {
+    color:#0d092f;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+li {
+    padding-left: 1rem; 
+    float: left;
+}
+
+/* About Section and Profile */
+#avatar {
+    width:250px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    float: right;
+    shape-outside: circle(50% at 148px 156px);
+    padding: 1rem;
+}
+
+#name {
     font-family: 'Sacramento', cursive;
-    font-size: 5.625rem;
-    color: #580a69;
+    font-size:5rem;
+    padding: 1rem;
+
 }
 
-h2 {
-    font-size: 4rem;
-    color: #580a69;
-}
-
-h3 {
-    font-size: 4em;
+#designation {
+    font-size: 30px;
 }
 
 p {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 40px;
 }
 
@@ -35,11 +93,13 @@ p {
 }
 
 .top-cloud {
-    top: 10px;
+    top: 40px;
     margin: 30px;
     position: relative;
     left: 200px;
 }
+
+/* Skills Section */
 
 .skillimg {
     width: 200px;
@@ -49,12 +109,22 @@ p {
 
 .skills {
     margin-bottom: 100px;
-      word-wrap: break-word;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .profile {
@@ -67,20 +137,21 @@ p {
     align-items: center;
     text-align: center;
 }
-  
+
 .display-pic {
     margin-top: 50px;
     width: 300px;
     height: 300px;
 }
 
-.skill-row ,.project-row{
+.skill-row,
+.project-row {
     width: 200px;
     height: 200px;
     border-radius: 5px;
     padding: 20px;
     font-size: 10px;
-    margin:20px;
+    margin: 20px;
 }
 
 .bottom {
@@ -95,24 +166,23 @@ p {
 .mid {
     margin-bottom: 50px;
 }
-.about{
+
+.about {
     width: 64rem;
-    border-width: 20000px;
-    height: 200px;
-    text-align: center;
-    font-size: 3em;
-    line-height: 40px;
+    font-size: 1em;
+    /* line-height: 40px; */
 }
+
 div.experience {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
-      word-wrap: break-word;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 div.experience .exp {
@@ -134,10 +204,13 @@ div.experience .exp p {
     align-items: flex-end;
     text-align: right;
 }
-.ex1, .ex2{
+
+.ex1,
+.ex2 {
     margin-left: 200px;
     margin-right: 200px;
 }
+
 .expimg {
     margin-left: auto;
 }
@@ -145,7 +218,12 @@ div.experience .exp p {
 .innerexp {
     height: 8rem;
 }
-.sjit{
+
+.sjit {
     position: relative;
     top: 100px;
+}
+
+#copyright {
+    font-size: 30px;
 }
