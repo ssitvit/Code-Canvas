@@ -203,3 +203,48 @@ function typeLetter() {
 }
 
 const intervalId = setInterval(typeLetter, 100);
+
+(function() {
+	'use strict';
+  
+	var lazyElements = [].slice.call(document.querySelectorAll('.lazy'));
+  
+	var loadLazyContent = function(lazyElement) {
+	  var url = lazyElement.getAttribute('data-src');
+  
+	  // Make an AJAX request to fetch the lazy content
+	  var xhr = new XMLHttpRequest();
+	  xhr.onreadystatechange = function() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+		  if (xhr.status === 200) {
+			// Set the fetched content as the innerHTML of the lazy element
+			lazyElement.innerHTML = xhr.responseText;
+			lazyElement.classList.add('loaded');
+		  }
+		}
+	  };
+	  xhr.open('GET', url, true);
+	  xhr.send();
+	};
+  
+	var lazyLoadHandler = function() {
+	  lazyElements.forEach(function(lazyElement) {
+		var rect = lazyElement.getBoundingClientRect();
+  
+		// Check if the lazy element is within the viewport
+		if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+		  loadLazyContent(lazyElement);
+		}
+	  });
+  
+	  // Remove the event listener once all lazy elements are loaded
+	  if (lazyElements.length === 0) {
+		window.removeEventListener('scroll', lazyLoadHandler);
+	  }
+	};
+  
+	// Add the lazyLoadHandler to the scroll event
+	window.addEventListener('scroll', lazyLoadHandler);
+	lazyLoadHandler(); // Call it once to load any initially visible elements
+  })();
+  
