@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*The above part resets all the default setting of the css done by browser*/
+.apply_box {
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(192, 226, 240);
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+
+}
+/*The above css creates a white container in which details boxes are displayed*/
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.form_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+/*The grid conatiner is used to properly alingn the blocks we have created*/
+label {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+/*flex is used for alignment and display blocks neatly*/
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline-color: rgb(24, 50, 168);
+}
+/*This css highlights the blocks with blue border when hover above it*/
+.button_container {
+  display: flex;
+
+  justify-content: flex-end;
+  margin-top: 20px;
+}/*The css styles the button container we have created in html*/
+button {
+  background-color: red;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: #ccc;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}/*The above css adds the hovering effect to the button*/
+.textarea_control {
+  grid-column: 1 / span 2;
+}
+/*The above css grid property is used to fix the size of address column in the form*/
+.textarea_control textarea {
+  width: 100%;
+}
+
+@media (max-width: 460px) {
+  .textarea_control {
+    grid-column: 1 / span 1;
+  }
+} ;
+/*The above media property is used to fix the size of form according to the frame size of moblie screen*/
