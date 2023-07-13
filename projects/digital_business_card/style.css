@@ -1,0 +1,37 @@
+body{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.adjust{
+    width: 700px;
+    display:flex;
+    justify-content: space-evenly;
+    border: 4px solid ;
+    border-color: white white rgb(146, 113, 146) white ;
+    background-color:rgb(207, 178, 178);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-blue
+{
+    border: 1px solid rgb(207, 178, 178);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.no-background
+{
+    background-color: transparent;
+}
