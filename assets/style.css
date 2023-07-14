@@ -376,12 +376,12 @@ body {
       margin: 10px;
       width: 50px;
       height: 50px;
-      line-height: 50px;
       font-size: 22px;
       text-align:center ;
       display: inline-flex;
      flex-direction: column;
       align-items: center;
+      justify-content: center;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       cursor: pointer;
       transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -423,10 +423,16 @@ body {
     .wrapper .icon:hover .tooltip {
       text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
     }
+    .wrapper .youtube:hover,
+    .wrapper .youtube:hover .tooltip,
+    .wrapper .youtube:hover .tooltip::before {
+      background-color: #CD201F;
+      color: #ffffff;
+    }
     .wrapper .facebook:hover,
     .wrapper .facebook:hover .tooltip,
     .wrapper .facebook:hover .tooltip::before {
-      background-color: #7289da;
+      background-color: #CD201F;
       color: #ffffff;
     }
     .wrapper .twitter:hover,
