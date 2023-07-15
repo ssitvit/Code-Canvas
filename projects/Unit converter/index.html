@@ -2,31 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Unit Converter</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="heading">unit converter</h1>
-      <div id="content">
-        <div class="content1">
-          <label for="">feet</label><br />
-          <input type="Number" value="1" id="feet" class="content2" />
-        </div>
+    <title>Arpan Codes | Unit Converter</title>
+<div class="converter-body">
+		
+    <h1 class="converter-title">Lenght Converter</h1>
 
-        <div class="content1">
-          <h1>=</h1>
-        </div>
+    <input type="text" placeholder="Input" id="input">
+    <span>=</span>
+    <input type="text" placeholder="Result" id="result">
 
-        <div class="content1">
-          <label for="">inches</label><br />
-          <input type="Number" value="12" id="inch" class="content2" />
-        </div>
-      </div>
-    </div>
+
+    <select  id="inputType">
+        <option value="meter">Meter</option>
+        <option value="kilometer">kilometer</option>
+        <option value="Centimeter">Centimeter</option>
+    </select>
+
+    <select  id="resultType">
+        <option value="meter">Meter</option>
+        <option value="kilometer">kilometer</option>
+        <option value="Centimeter">Centimeter</option>
+    </select>
 
     <script src="index.js"></script>
-  </body>
+
+</div>
+</head>
 </html>
+
