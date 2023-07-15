@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
 *{
   font-family: 'Pacifico',Arial, Helvetica, sans-serif;
   margin: 0;
@@ -38,6 +39,10 @@ header{
   color:#ffffff;
 }
 
+.logo:hover {
+ color:black;
+}
+
 .box{
   color:white;
   width: 30px;
@@ -63,6 +68,9 @@ header{
   font-size: 1.5rem;
   cursor: pointer;
   padding-top: 10px;
+}
+#cart-icon:hover{
+  color:black;
 }
 
 img{
@@ -252,3 +260,15 @@ transform: scale(1.5);
   font-size: 2rem;
   cursor: pointer;
 }
+
+ .bonus{
+  background-color:lightsalmon;
+  padding: 4px 7px 4px 7px;
+}
+ .bonus:hover{
+   color:white;
+   background-color:orangered;
+   
+ }
+
+ 
