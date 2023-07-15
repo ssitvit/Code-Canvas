@@ -1,36 +1,38 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/66e60b4850.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,500&family=Quintessential&family=Saira+Condensed:wght@800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <script src="https://kit.fontawesome.com/66e60b4850.js" crossorigin="anonymous"></script>
-  <link href="assets/style.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CODECANVAS</title>
 </head>
 
 <body>
+
+  <div class="scrollToTopContainer">
+    <a href="#" onclick="topFunction()" class="scrollToTopButton" id="myBtn"><i class="fa-solid fa-upload"></i></a>
+  </div>
+  
   <header class="showcase">
     <div class="content">
-      <img src="https://i.postimg.cc/Vvq7LzyY/White-logo-transparent-bg.png" class="logo" alt="Traversy Media">
-
-      <div class="title">
-        CODE CANVAS
-      </div>
-      <div class="text">
-        Bootstrap your Code Fantasies into Reality
-      </div>
-
-      <br>
-
+      <img src="https://i.postimg.cc/Vvq7LzyY/White-logo-transparent-bg.png" class="logo" alt="Traversy Media" />
+      <div class="title">CODE CANVAS</div>
+      <div class="text">Bootstrap your Code Fantasies into Reality</div>
+      <br />
     </div>
   </header>
 
@@ -38,19 +40,18 @@
   <section class="services">
     <div class="container grid-3 center">
       <div>
-        <!--         <i class="fab fa- fa-3x"></i> -->
         <h3>Clones</h3>
         <p>You can clone your favourite websites!</p>
       </div>
       <div>
-        <!--         <i class="fas fa-chalkboard-teacher fa-3x"></i> -->
         <h3>Innovation</h3>
         <p>Show us how innovative you can be with your projects and ideas!</p>
       </div>
       <div>
-        <!--         <i class="fas fa-briefcase fa-3x"></i> -->
-        <h3> Games </h3>
-        <p>Add games that challenge users and test your logic in the making!</p>
+        <h3>Games</h3>
+        <p>
+          Add games that challenge users and test your logic in the making!
+        </p>
       </div>
     </div>
   </section>
@@ -64,32 +65,41 @@
         </div>
         <div>
           <h3>About Us</h3>
-          <p>At IEEE SSIT, we foster growth and knowledge, supporting each member as pillars of innovation. Together, we
-            strive to create a positive impact on society. Our chapter promotes open-source enthusiasm and engages in
-            ongoing discussions on technology's societal implications, including bio-tech, big data, privacy, and
-            ethics. Join us on this exciting journey of exploration and collaboration.</p>
+          <p>
+            At IEEE SSIT, we foster growth and knowledge, supporting each
+            member as pillars of innovation. Together, we strive to create a
+            positive impact on society. Our chapter promotes open-source
+            enthusiasm and engages in ongoing discussions on technology's
+            societal implications, including bio-tech, big data, privacy, and
+            ethics. Join us on this exciting journey of exploration and
+            collaboration.
+          </p>
         </div>
       </div>
     </div>
   </section>
+
   <div class="title1">Projects</div>
+
   <section class="hero-section">
     <div class="input-container">
-      <input type="text" placeholder="Search project" autofocus>
+      <input type="text" placeholder="Search project" autofocus />
 
       <select name="" id="category">
         <option value="Title">Title</option>
         <option value="Category">Category</option>
       </select>
     </div>
+
     <div class="card-grid">
-      <a class="card" href="projects/travel_landing/index.html">
+      <a class="card highlight" href="projects/travel_landing/index.html">
         <div class="card__background" style="background-image: url(projects/travel_landing/project1.png)"></div>
         <div class="card__content">
           <p class="card__category">World Tour</p>
           <h3 class="card__heading">Travellers Community</h3>
         </div>
       </a>
+
       <a class="card" href="projects/digital-clock/index.html">
         <div class="card__background" style="background-image: url(projects/digital-clock/bg.png)"></div>
         <div class="card__content">
@@ -97,6 +107,23 @@
           <h3 class="card__heading">Digital Clock</h3>
         </div>
       </a>
+
+      <a class="card" href="projects\PathfindingVisualiser/index.html">
+        <div class="card__background" style="background-image: url(projects/PathfindingVisualiser/image.png)"></div>
+        <div class="card__content">
+          <p class="card__category">DSA algorithms</p>
+          <h3 class="card__heading">Pathfinding Visualizer</h3>
+        </div>
+      </a>
+
+      <a class="card" href="projects\SortingVisualizer/index.html">
+        <div class="card__background" style="background-image: url(projects/SortingVisualizer/image.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">DSA algorithms</p>
+          <h3 class="card__heading">Sorting Visualizer</h3>
+        </div>
+      </a>
+
       <a class="card" href="projects/pine-forest/index.html">
         <div class="card__background" style="background-image: url(projects/pine-forest/bg.png)"></div>
         <div class="card__content">
@@ -104,6 +131,21 @@
           <h3 class="card__heading">Forest</h3>
         </div>
       </a>
+      <a class="card" href="projects/Job_Application_Form/index.html">
+        <div class="card__background" style="background-image: url(projects/Job_Application_Form/frontpage.png)"></div>
+        <div class="card__content">
+          <p class="card__category">FORM</p>
+          <h3 class="card__heading">JOB APPLICATION FORM</h3>
+        </div>
+      </a>
+      <a class="card" href="projects/A_Tribute_Page/index.html">
+        <div class="card__background" style="background-image: url(projects/A_Tribute_Page/main.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Tribute Page</p>
+          <h3 class="card__heading">TRIBUTE PAGE</h3>
+        </div>
+      </a>
+
       <a class="card" href="projects/SkillUp/index.html">
         <div class="card__background" style="background-image: url(projects/SkillUp/bg.png)"></div>
         <div class="card__content">
@@ -111,6 +153,7 @@
           <h3 class="card__heading">SkillUp</h3>
         </div>
       </a>
+
       <a class="card" href="projects/Rajasthan-Desert/index.html">
         <div class="card__background" style="background-image: url(projects/Rajasthan-Desert/bg.png)"></div>
         <div class="card__content">
@@ -118,6 +161,7 @@
           <h3 class="card__heading">Rajasthan-Desert</h3>
         </div>
       </a>
+
       <a class="card" href="projects/drum_kit/index.html">
         <div class="card__background" style="background-image: url(projects/drum_kit/Images/p3.jpg)"></div>
         <div class="card__content">
@@ -125,6 +169,7 @@
           <h3 class="card__heading">Drum Kit</h3>
         </div>
       </a>
+
       <a class="card" href="projects/shopping_cart/index.html">
         <div class="card__background" style="background-image: url(projects/shopping_cart/images/main.png)"></div>
         <div class="card__content">
@@ -146,15 +191,7 @@
           <h3 class="card__heading">Flames Calculator</h3>
         </div>
       </a>
-      <a class="card" href="#">
-        <div class="card__background"
-          style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-        </div>
-        <div class="card__content">
-          <p class="card__category">Category</p>
-          <h3 class="card__heading">Example Project Name</h3>
-        </div>
-      </a>
+
       <a class="card" href="projects/Resposive_Resume_portfolio/index.html">
         <div class="card__background"
           style="background-image: url(https://cdn-icons-png.flaticon.com/512/1870/1870080.png)"></div>
@@ -178,30 +215,28 @@
           <h3 class="card__heading">Test your knowledge!</h3>
         </div>
       </a>
-
       <a class="card" href="projects/Portfolio/index.html">
         <div class="card__background" style="background-image: url(projects/Portfolio/images/profile.png)"></div>
         <div class="card__content">
           <p class="card__category">Template</p>
           <h3 class="card__heading">Portfolio</h3>
         </div>
-        <a class="card" href="projects/Custom_Music_Player/index.html">
-          <div class="card__background" style="background-image: url(projects/Custom_Music_Player/images/cover.jpg)">
-          </div>
-          <div class="card__content">
-            <p class="card__category">Music</p>
-            <h3 class="card__heading">Custom Music Player</h3>
-          </div>
-        </a>
-        <a class="card" href="projects/ToDoList/index.html">
-          <div class="card__background" style="background-image: url(projects/ToDoList/todo.png)"></div>
-          <div class="card__content">
-            <p class="card__category">Tasks</p>
-            <h3 class="card__heading">To-Do List</h3>
-          </div>
-        </a>
       </a>
-
+      <a class="card" href="projects/Custom_Music_Player/index.html">
+        <div class="card__background" style="background-image: url(projects/Custom_Music_Player/images/cover.jpg)">
+        </div>
+        <div class="card__content">
+          <p class="card__category">Music</p>
+          <h3 class="card__heading">Custom Music Player</h3>
+        </div>
+      </a>
+      <a class="card" href="projects/ToDoList/index.html">
+        <div class="card__background" style="background-image: url(projects/ToDoList/todo.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Tasks</p>
+          <h3 class="card__heading">To-Do List</h3>
+        </div>
+      </a>
       <a class="card" href="projects/password_generator/index.html">
         <div class="card__background"
           style="background-image: url(./projects/password_generator/images/background.jpg)"></div>
@@ -276,6 +311,17 @@
         </div>
       </a>
 
+      <a class="card" href="projects/Tic_Tac_Toe/index.html">
+        <div class="card__background" style="background-image: url(projects/Tic_Tac_Toe/images/tic_tac_toe.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Tic Tac Toe</h3>
+        </div>
+        </a>
+    
+
+
+
       <a class="card" href="projects/Bing/index.html">
         <div class="card__background" style="background-image: url(projects/Bing/images/preview.jpg)"></div>
         <div class="card__content">
@@ -288,16 +334,146 @@
         <div class="card__content">
           <p class="card__category">Application</p>
           <h3 class="card__heading">Unit Converter</h3>
+
+      <a class="card" href="projects/Candy_Crush/index.html">
+        <div class="card__background" style="background-image: url(projects/Candy_Crush/candy-crush-background-2.png)">
+        </div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Candy Crush</h3>
+        </div>
+      </a>
+      <a class="card" href="projects/Memory_Game/index.html">
+        <div class="card__background" style="background-image: url(projects/Memory_Game/images/preview.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Memory Game</h3>
+
         </div>
       </a>
 
-      <div>
+      <a class="card" href="projects/college/index.html">
+        <div class="card__background" style="background-image: url(projects/college/images/background.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">Website</p>
+          <h3 class="card__heading">University Website</h3>
+        </div>
+      </a>
+
+      <a class="card" href="projects/Expense_Tracker/index.html">
+        <div class="card__background" style="background-image: url(projects/Expense_Tracker/download.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Expense_Tracker</p>
+          <h3 class="card__heading">Expense Tracker</h3>
+        </div>
+      </a>
+
+      <a class="card" href="projects/Spotify_Clone/index.html">
+        <div class="card__background" style="background-image: url(projects/Spotify_Clone/images/prew.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">Clone</p>
+          <h3 class="card__heading">Spotify Clone</h3>
+        </div>
+      </a>
+
+      <a class="card" href="projects/Solar_System_Model/index.html">
+        <div class="card__background" style="background-image: url(projects/Solar_System_Model/Screenshot.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Website</p>
+          <h3 class="card__heading">Solar System Model</h3>
+        </div>
+      </a>
+
+      <a class="card" href="projects/Bingo_Game/index.html">
+        <div class="card__background" style="background-image: url(projects/Bingo_Game/images/Bingo_Game.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Bingo Game</h3>
+
+        </div>
+      </a>
+
+
+      <a class="card" href="projects/Word_Scramble_Game/index.html">
+        <div class="card__background" style="background-image: url(projects/Word_Scramble_Game/Image/MLH.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Word Scramble Game</h3>
+        </div>
+      </a>
+
+
+      <a class="card" href="projects/Flappy_Bird_Game/index.html">
+        <div class="card__background" style="background-image: url(projects/Flappy_Bird_Game/images/flappy-bird-img.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">Game</p>
+          <h3 class="card__heading">Flappy Bird Game</h3>
+        </div>
+      </a>
+
+
+       <a class="card" href="projects/RandomFactGenerator/index.html">
+        <div class="card__background" style="background-image: url(projects/RandomFactGenerator/download.jpeg)"></div>
+        <div class="card__content">
+          <p class="card__category">Fun</p>
+          <h3 class="card__heading">Random Fact Generator</h3>
+        </div>
+      </a>
+
+       <a class="card" href="projects/Stopwatch/index.html">
+        <div class="card__background" style="background-image: url(projects/Stopwatch/Stopwatch.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Application</p>
+          <h3 class="card__heading">Stopwatch</h3>
+        </div>
+      </a>
+      <a class="card" href="projects/Hotstar_Clone/index.html">
+        <div class="card__background" style="background-image: url(projects/Hotstar_Clone/Hotstar.png)"></div>
+        <div class="card__content">
+          <p class="card__category">Website Frontend</p>
+          <h3 class="card__heading">Hotstar_Clone</h3>
+        </div>
+      </a>
+    </div>
   </section>
 
-  <footer class="center bg-dark">
-    <p>IEEE SSIT VIT &copy; 2023</p>
-  </footer>
+  <div class="section">
+    <h3>CONTACT <span>US</span></h3>
+    <div class="wrapper">
+        <a href="https://www.youtube.com/channel/UCytURJu5gyXDvJB3axWGFzQ" target="_blank" class="icon youtube">
+          <div class="tooltip">YouTube</div>
+          <span><i class="fab fa-youtube" style="font-size:35px"></i></span>
+        </a>
+        <a href="https://www.facebook.com/SSITVIT/" target="_blank" class="icon twitter">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook" style="font-size:35px"></i></span>
+        </a>
+        <a href="https://www.instagram.com/ieeessit/" target="_blank" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fa fa-instagram" style="font-size:35px"></i></span>
+        </a>
+        <a href="https://github.com/ssitvit" target="_blank" class="icon github">
+          <div class="tooltip">Github</div>
+          <span><i class="fab fa-github" style="font-size:35px"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/company/ieee-ssit-vit/" class="icon linkedin">
+          <div class="tooltip">Linkedin</div>
+          <span><i class="fab fa-linkedin" style="font-size:35px"></i></span>
+        </a>
+      </div>
+      <hr>
+      <div>
+        <div class="footer-copyright">
+          <h4>IEEE SSIT VIT © 2023</h4>
+        </div>
+      </div>
+    </div>
+  <!-- Footer Section Ends -->
   <script src="filter_project.js"></script>
   <script src="script.js"></script>
-
+    <script src="assets/to_top.js"></script>
 </body>
+
+
+
+  </html> 
