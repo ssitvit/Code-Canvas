@@ -264,7 +264,7 @@ body {
   position: absolute;
   bottom: 0;
   
-  background-color: rgba(12, 24, 28, 0.875);
+  background-color: gray;
 
   border-radius: var(--spacing-l);
   border-top-left-radius: 0;
