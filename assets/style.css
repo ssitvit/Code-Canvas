@@ -18,24 +18,37 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0.9);
+  
+  /*adding new back ground color*/
+ background-color: #635985;
+  /*background: rgba(0, 0, 0, 0.9);*/
   margin: 0;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
    height: 100%;
+   width: 100%;
+}
+.showcase{
+  display: flex;
+  /*background-color: #635985;*/
+  background-image: url(./codecanvasnew.jpg);
+  background-size: cover;/*to make image look better*/
+  width: 100%;
+  text-align: center;
+
 }
 
 .showcase::after{
     content: "";
   height: 100vh;
   width: 100%;
-  background-image: url(https://i.postimg.cc/hjkL7MBg/programming-background-with-person-working-with-codes-computer.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  /*filter: blur(10px);
+  -webkit-filter: blur(10px);*/
   transition: all 1000ms;
 }
 
@@ -50,33 +63,54 @@ body {
 } */
 
 .content {
-  position: absolute;
+  /*position: absolute;*/
+  
   z-index: 1;
   top: 10%;
-  left: 50%;
+  left: 0;
   margin-top: 105px;
-  margin-left: -145px;
-  width: 300px;
+  
+  
   height: 350px;
-  text-align: center;   
+ /* text-align: center;  */ 
   margin-bottom: 20px;
+  
+  text-align: left;
 }
-
-.content .logo {
-  height: 200px;
-  width: 300px;
+.content>img{
+  text-align: left;
 }
-
-.content .title {
-  font-size: 3.2rem;
+.logo>img{
+  height: 300px;
+  width: 370px;
+  text-align: left;
+  margin-left:90px;
+}
+#left{
+  text-align: left;
+}
+.title {
+ /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+ width: 100%;
+ letter-spacing: 0.3px;
+  font-size: 3.5rem;
   margin-top: 1rem;
-  font-family: "Abril Fatface", cursive;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: 700;
+  /*font-family: "Abril Fatface", cursive;*/
+  text-align: left;
+  margin-left:50px;
 }
 
-.content .text {
+.text {
   line-height: 1.7;
   margin-top: 1rem;
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-left:50px;
   font-family: "Abril Fatface", cursive;
+  width: 100%;
 }
 
 .title1 {
@@ -378,9 +412,10 @@ body {
 }
 
 /* Footer Section Starts */
-.section{
+/*.section{
     background-color: black;
-}
+    enhancing it a bit more
+}*/
 .wrapper{
     text-align: center;
    }
