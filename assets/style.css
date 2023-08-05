@@ -28,27 +28,28 @@ body {
    height: 100%;
    width: 100%;
 }
-.showcase{
+ .showcase{
   display: flex;
-  /*background-color: #635985;*/
-  background-image: url(./codecanvasnew.jpg);
   background-size: cover;/*to make image look better*/
   width: 100%;
   text-align: center;
+ 
+} 
 
-}
 
 .showcase::after{
-    content: "";
+  content: "";
   height: 100vh;
   width: 100%;
-
+ background-image: url(./codecanvasnew.jpg);/*adding new image to background*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  /*filter: blur(10px);
-  -webkit-filter: blur(10px);*/
+  background-position: 100%;
+ background-position-x:left;
+  /*display: block;*/
+  /*enabling the actual animation*/
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
   transition: all 1000ms;
 }
 
@@ -64,34 +65,37 @@ body {
 
 .content {
   /*position: absolute;*/
-  
   z-index: 1;
-  top: 10%;
+  top: 5%;
   left: 0;
   margin-top: 105px;
-  
-  
-  height: 350px;
+  height: 0px;
+  width: 0px;
  /* text-align: center;  */ 
   margin-bottom: 20px;
-  
   text-align: left;
 }
 .content>img{
   text-align: left;
-}
-.logo>img{
   height: 300px;
-  width: 370px;
-  text-align: left;
-  margin-left:90px;
+  width: 400px;
+  margin-left: 60px;
+}
+/*giving are heading text new heights and width*/
+.headsec{
+  height: 100px;
+  width: 500px;
+}
+.note{
+  height: 500px;
+  width: 500px;
 }
 #left{
   text-align: left;
 }
 .title {
  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
- width: 100%;
+width: 100%;
  letter-spacing: 0.3px;
   font-size: 3.5rem;
   margin-top: 1rem;
