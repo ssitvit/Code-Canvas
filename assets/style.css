@@ -517,7 +517,12 @@ body {
 }
 
 .invert-color {
+  color: black;
+  mix-blend-mode: difference;
+  transition: color 0.3s;
   filter: invert(100%);
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
 }
 
 .theme-toggle input {
