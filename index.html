@@ -21,13 +21,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CODECANVAS</title>
 </head>
-<p class="invert-color" style="margin-top: 30px; margin-left: 1350px;">Light/Dark theme :</p>
-<label class="theme-toggle" style="margin-top: 4px; margin-left: 1350px">
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked>
-  <span class="slider"></span>
-</label>
 <body>
-
+  <nav>
+    <div class="logoname" style="color: white;">Code<span>Canvas</span></div>
+    <div class="navbar">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#project"><li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+      <label class="theme-toggle">
+        <input type="checkbox" id="themeToggle" onclick="toggleTheme()" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+  
   <div class="scrollToTopContainer">
     <a href="#" onclick="topFunction()" class="scrollToTopButton" id="myBtn"><i class="fa-solid fa-upload"></i></a>
   </div>
@@ -62,7 +72,7 @@
   </section>
 
   <!-- About -->
-  <section class="about bg-light">
+  <section class="about bg-light" id="about">
     <div class="container">
       <div class="grid-2">
         <div class="center">
@@ -84,7 +94,7 @@
     </div>
   </section>
 
-  <div class="title1">Projects</div>
+  <div class="title1" id="project">Projects</div>
 
   <section class="hero-section">
     <div class="input-container">
@@ -479,11 +489,18 @@
           <h3 class="card__heading">Astromania</h3>
         </div>
       </a>
+      <a class="card" href="projects/Netflix-Replica/index.html">
+        <div class="card__background" style="background-image: url(projects/Netflix-Replica/image/mobile.jpg); background-size: cover;"></div>
+        <div class="card__content">
+          <p class="card__category">Front-end & API Website</p>
+          <h3 class="card__heading">Netflix Clone</h3>
+        </div>
+      </a>
       
     </div>
   </section>
 
-  <div class="section">
+  <div class="section" id="contact">
     <h3>CONTACT <span>US</span></h3>
     <div class="wrapper">
         <a href="https://www.youtube.com/channel/UCytURJu5gyXDvJB3axWGFzQ" target="_blank" class="icon youtube">
