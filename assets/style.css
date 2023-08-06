@@ -623,3 +623,48 @@ a {
   width: 100%;
     max-width: 700px;
   }
+
+#newsin {
+  /* width: 75%; */
+  text-align: center;
+  padding-top: 100px;
+  border: 2px solid black;
+  /* padding: 50px; */
+  color: white;
+  padding-bottom: 10px;
+  margin: 100px;
+  border-radius: 15px;
+  background-color: #343A40;
+}
+
+#info {
+  text-align: center;
+  padding: 10px;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+#nameuser{
+  width: 75%;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+   box-shadow: 1px 2px 1.2px rgb(0, 0, 0);
+}
+
+#checkedbox {
+  padding: 50px;
+  margin: 10px;
+  position: relative;
+  left: 0;
+}
+
+#submitnews {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 50px;
+  cursor: pointer;
+}
