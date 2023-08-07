@@ -9,3 +9,5 @@
 | Avdhesh Varshney      |       [@Avdhesh-Varshney](https://github.com/Avdhesh-Varshney)|
 |-------------------     | -------------------------------------------------------------| ---------------- |
   Anukanksha Priya       |    [@cleveranu](https://github.com/cleveranu)                |                  |
+|-------------------     | -------------------------------------------------------------| ---------------- |
+| Urvija Jha            |       [@dosasambhar](https://github.com/dosasambhar)----------|
