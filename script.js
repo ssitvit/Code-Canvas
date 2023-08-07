@@ -194,3 +194,92 @@ function typeLetter() {
 }
 
 const intervalId = setInterval(typeLetter, 100);
+
+function toggleTheme() {
+  var slider = document.getElementById("themeToggle");
+  if (slider.checked) {
+    disableDarkTheme();
+  } else {
+    enableDarkTheme();
+  }
+}
+
+function enableDarkTheme() {
+  var elements = document.getElementsByTagName('*');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (
+      element.tagName !== 'BODY' &&
+      !element.classList.contains('ignore-dark-theme') &&
+      !element.classList.contains('project-category') &&
+      !element.classList.contains('footer')
+    ) {
+      element.classList.add('dark-theme');
+    }
+  }
+
+  // Adding specific background color for the footer
+  var footer = document.querySelector('footer');
+  if (footer) {
+    footer.classList.add('dark-theme');
+  }
+}
+
+
+function disableDarkTheme() {
+  var elements = document.getElementsByTagName('*');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (
+      element.tagName !== 'BODY' &&
+      !element.classList.contains('ignore-dark-theme') &&
+      !element.classList.contains('project-category')
+    ) {
+      element.classList.remove('dark-theme');
+    }
+  }
+}
+function toggleTheme() {
+  var slider = document.getElementById("themeToggle");
+  if (slider.checked) {
+    disableDarkTheme();
+  } else {
+    enableDarkTheme();
+  }
+}
+
+function enableDarkTheme() {
+  var elements = document.getElementsByTagName('*');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (
+      element.tagName !== 'BODY' &&
+      !element.classList.contains('ignore-dark-theme') &&
+      !element.classList.contains('project-category') &&
+      !element.classList.contains('footer')
+    ) {
+      element.classList.add('dark-theme');
+    }
+  }
+
+  // Adding specific background color for the footer
+  var footer = document.querySelector('footer');
+  if (footer) {
+    footer.classList.add('dark-theme');
+  }
+}
+
+
+function disableDarkTheme() {
+  var elements = document.getElementsByTagName('*');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (
+      element.tagName !== 'BODY' &&
+      !element.classList.contains('ignore-dark-theme') &&
+      !element.classList.contains('project-category')
+    ) {
+      element.classList.remove('dark-theme');
+    }
+  }
+}
