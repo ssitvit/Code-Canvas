@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="music.css" media="screen" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+         <!-- <div class="tittle"><i class="fa-solid fa-angle-down"></i> Now Playing<i class="fa-solid fa-ellipsis"></i></div> -->
+          <div class="songimg">
+            <div class="circle">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="circle">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <img src="media/img.jpg" class="img"/>
+          <h1>Steal My Girl</h1>
+          <p>One Direction</p>
+          <audio  id="song">
+            <source src="songs/steal my girl.mpeg" type="audio/mpeg">
+          </audio>
+         
+          <input type="range" value="0" id="progress">
+          <div class="control">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+          </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/45511a6a05.js"crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
