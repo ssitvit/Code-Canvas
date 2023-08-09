@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/event_calender/static/css/main.e09af1da.css",
+    "main.js": "/event_calender/static/js/main.b72f324b.js",
+    "static/js/787.26ea3775.chunk.js": "/event_calender/static/js/787.26ea3775.chunk.js",
+    "index.html": "/event_calender/index.html",
+    "main.e09af1da.css.map": "/event_calender/static/css/main.e09af1da.css.map",
+    "main.b72f324b.js.map": "/event_calender/static/js/main.b72f324b.js.map",
+    "787.26ea3775.chunk.js.map": "/event_calender/static/js/787.26ea3775.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e09af1da.css",
+    "static/js/main.b72f324b.js"
+  ]
+}
