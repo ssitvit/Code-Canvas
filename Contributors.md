@@ -6,3 +6,6 @@
 | --------------------- | ------------------------------------------------------------- | ---------------- |
 | Debsourya Datta       |       [@debsouryadatta](https://github.com/debsouryadatta)    |                  |
 | --------------------- | ------------------------------------------------------------- | ---------------- |
+| Avdhesh Varshney      |       [@Avdhesh-Varshney](https://github.com/Avdhesh-Varshney)|
+|-------------------     | -------------------------------------------------------------| ---------------- |
+  Anukanksha Priya       |    [@cleveranu](https://github.com/cleveranu)                |                  |

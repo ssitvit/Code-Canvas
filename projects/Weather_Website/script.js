@@ -16,6 +16,19 @@ let weather = {
       })
       .then((data) => this.displayWeather(data));
   },
+  fetchWeatherByCoordinates: function (latitude, longitude) {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${this.apiKey}`;
+
+    fetch(apiUrl)
+      .then(response => {
+        if (!response.ok) {
+          alert("No weather found.");
+          throw new Error("No weather found.");
+        }
+        return response.json();
+      })
+      .then(data => this.displayWeather(data));
+  },
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
@@ -39,16 +52,46 @@ let weather = {
   },
 };
 
+function successCallback(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+
+  weather.fetchWeatherByCoordinates(latitude, longitude);
+}
+
+function errorCallback(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied the geolocation request.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred.");
+      break;
+  }
+}
+
 document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
 
-document
-  .querySelector(".search-bar")
-  .addEventListener("keyup", function (event) {
-    if (event.key == "Enter") {
-      weather.search();
-    }
-  });
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    weather.search();
+  }
+});
+
+document.getElementById("geolocationButton").addEventListener("click", function () {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+  } else {
+    alert("Geolocation is not supported by your browser.");
+  }
+});
 
 weather.fetchWeather("Denver");
