@@ -126,21 +126,21 @@ At last, after successfully submitting a pull request you can view your work liv
 
 ## Repo Status
 
-<div>
-	<img src="https://img.shields.io/github/repo-size/DevFeed404/DevFeed-1.0?style=for-the-badge" />
-	<img src="https://img.shields.io/github/stars/DevFeed404/DevFeed-1.0?style=for-the-badge&color=yellow" />
-	<img src="https://img.shields.io/github/forks/DevFeed404/DevFeed-1.0?style=for-the-badge&color=seagreen" />
-	<img src="https://img.shields.io/github/contributors/DevFeed404/DevFeed-1.0?style=for-the-badge&color=critical" />
-	<img src="https://img.shields.io/github/last-commit/DevFeed404/DevFeed-1.0?style=for-the-badge&color=seagreen" />
+<div align="center">
+  <br>
+	
+  <img src="https://img.shields.io/github/repo-size/ssitvit/Code-Canvas?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-closed-raw/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/last-commit/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-pr/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-pr-closed-raw/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/forks/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/stars/ssitvit/Code-Canvas?style=for-the-badge" />
+    <img src="https://img.shields.io/github/contributors-anon/ssitvit/Code-Canvas?style=for-the-badge" />
+
 </div>
-<br>
-<div>
-	<img src="https://img.shields.io/github/issues/DevFeed404/DevFeed-1.0?style=for-the-badge&color=green" />
-	<img src="https://img.shields.io/github/issues-closed/DevFeed404/DevFeed-1.0?style=for-the-badge&color=orange" />
-	<img src="https://img.shields.io/github/issues-pr/ssitvit/Code-Canvas.svg?style=for-the-badge&color=green" />
-	<img src="https://img.shields.io/github/issues-pr-closed/DevFeed404/DevFeed-1.0?style=for-the-badge&color=orange" />
-</div>
-<br>
+
 
 ---
 ### MEET OUR TEAM ->
@@ -172,11 +172,10 @@ At last, after successfully submitting a pull request you can view your work liv
 
 <h2 align= "center">Project Mentors 👩‍💻</h2>
 <p align="center">	
-<a href="https://github.com/Dharmesh177"><img src="https://github.com/iqrafirdose/Code-Canvas/assets/114678694/d61cc205-fddf-4389-a497-c9b15148b545" width="10%" />   </a>   <a href="https://github.com/artimanputra/"><img src="https://github.com/iqrafirdose/Code-Canvas/assets/114678694/1b128b14-ddfa-49d8-9be2-a166ddba6df6" width="10%" height="100" /></a>
-
+<a href="https://github.com/Dharmesh177"><img src="https://github.com/iqrafirdose/Code-Canvas/assets/114678694/d61cc205-fddf-4389-a497-c9b15148b545" width="10%" />   </a>   
 <br>
 <a href="https://github.com/Dharmesh177"><strong>Dharmesh Vala</strong></a> &ensp;                  
-<a href="https://github.com/artimanputra/"><strong> Arti Manputra</strong></a>
+
 <br>
 <p align="center">
  <a href="https://www.linkedin.com/in/dharmesh-vala-252724204/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/Dharmesh177"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a> &ensp;    <a href="https://www.linkedin.com/in/arti-manputra/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/artimanputra/"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a>
