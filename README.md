@@ -178,7 +178,7 @@ At last, after successfully submitting a pull request you can view your work liv
 
 <br>
 <p align="center">
- <a href="https://www.linkedin.com/in/dharmesh-vala-252724204/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/Dharmesh177"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a> &ensp;    <a href="https://www.linkedin.com/in/arti-manputra/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/artimanputra/"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a>
+ <a href="https://www.linkedin.com/in/dharmesh-vala-252724204/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="30px"></img></a><a href="https://github.com/Dharmesh177"><img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="30px"></img></a> &ensp;   
 
 <br>
 
