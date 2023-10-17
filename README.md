@@ -1,8 +1,8 @@
+![image](https://github.com/Shreyaar12/Code-Canvas/assets/91542376/e70ac101-cbdb-4267-949f-81d203fe48f1)
 
 <div id="top"></div>
 
 
-![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
 
 # Code Canvas 
 **Bootstrap your Code Fantasies into Reality**    
@@ -34,12 +34,7 @@ Happy learning!!
 
 
 
-<div align="center">
-      <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-      <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
-      <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
- </div>
- 
+
  ---
  ### This Open-Source project is a part of GSSOC
 ---
