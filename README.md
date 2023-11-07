@@ -4,8 +4,13 @@
 
 ![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
 
+
+# Code Canvas
+
+=======
 # Code Canvas 
 **Bootstrap your Code Fantasies into Reality**    
+
 
 CodeCanvas is an innovative platform where developers can collaborate and contribute their **frontend expertise**. From booking systems to games, landing pages to clones, this community-driven repository welcomes diverse frontend projects. Unleash your creativity, share your code, and inspire others to build captivating web experiences together on CodeCanvas.
 <br>
@@ -40,8 +45,17 @@ Happy learning!!
       <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
  </div>
  
+
+ 
+---
+## Our Mission
+
+Code-Canvas aims to create an environment where developers can come together, collaborate, and contribute their frontend expertise. By sharing projects and code, we hope to facilitate learning, inspire creativity, and foster innovation in web development. Our mission is to provide a platform that empowers developers to turn their code fantasies into reality and build captivating web experiences.
+
+=======
  ---
  ### This Open-Source project is a part of GSSOC
+
 ---
 <p align="center">
     <img src="https://miro.medium.com/max/1400/1*fqJaH_oISOR96gLgpJBwWQ.png" />
@@ -65,6 +79,18 @@ if (youLiked) {
 # Read for a successful merge
 
 
+![Go to IEEE SSIT VIT](https://technologyandsociety.org/wp-content/uploads/Logo-Color-1.jpg) <br/>
+# Hello People!!  <br/>
+
+## How to Contribute
+
+
+We encourage you to contribute to Code-Canvas and help us grow this repository. To get started, please check out the Contributing.md file for detailed contribution guidelines. Don't forget to add your name to the Contributors.md file to be recognized for your contributions.
+#### Contribute and grow this repository with us, make sure to check out Contributing.md for contribution guidelines and add your name in the Contributors.md.  <br/>
+# To make a pull request follow these steps: <br/>
+## Step 1 Complete your project
+=======
+
 ## Contribute <br/>
 #### Contribute and grow this repository with us, make sure to check out <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributing.md">Contributing.md</a> for contribution guidelines and add your name in the <a href="https://github.com/ssitvit/Code-Canvas/blob/main/Contributors.md">Contributors.md</a>.  <br/>
 ## Code Of Conduct
@@ -75,6 +101,7 @@ This Community is <a href="https://github.com/ssitvit/Code-Canvas/blob/main/LICE
 
 <!--
 ## Step 1: Complete your project
+
 ---
 #### click on **Start Hacking**  <br/>
 >   Login in using your GitHub account <br/> 
@@ -113,6 +140,19 @@ git push -u origin <your_branch_name>
 8. Create a Pull Request.<br>
 9. Congratulations! 🎉 you've made your contribution.
 
+
+At last after successfully submitting a pull request you can view your work live at <a href="https://codecanvas.ieeessitvit.tech/">SSIT LIVE </a>
+	
+## Languages
+
+CSS: 41.4%
+
+HTML: 31.0%
+
+JavaScript: 27.6%
+
+## License
+=======
 At last, after successfully submitting a pull request you can view your work live at <a href="https://codecanvas.ieeessitvit.tech/">SSIT LIVE </a>
 
 
@@ -194,3 +234,5 @@ At last, after successfully submitting a pull request you can view your work liv
 Thank you to all the amazing contributors who have made this project possible!!💝
 
 
+
+This project is licensed under the MIT license.
