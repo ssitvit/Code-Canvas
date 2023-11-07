@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.mainDiv {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s;
+}
+
+.randomBtn {
+  background-color: skyblue;
+  border: 0;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: font-size 0.5s;
+}
+
+.randomBtn:hover {
+  font-size: 1.24rem;
+  background-color: rgb(137, 204, 231);
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
+
+  .randomBtn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
