@@ -18,7 +18,9 @@ const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 
-document.querySelector('.check').addEventListener('click', function () {
+// on clicking on enter key or chick btn 
+document.querySelector('form.form').addEventListener('submit', function (e) {
+  e.preventDefault()
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
 
@@ -55,6 +57,7 @@ else if(guess!==secretNumber){
     }
 }
 })
+
 /*else if(guess>secretNumber){
   if(score>1){
   document.querySelector('.message').textContent = 'Too high!';
