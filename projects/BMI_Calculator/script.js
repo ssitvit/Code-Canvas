@@ -33,5 +33,5 @@ btn.addEventListener("click", function () {
   }
   document.querySelector(
     ".comment"
-  ).innerHTML = `Comment: you are <span id="comment">${status}</span>`;
+  ).innerHTML = `You are <span id="comment">${status}</span>`;
 });
